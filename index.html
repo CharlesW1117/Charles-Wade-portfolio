@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark" />
+  <title>Charles Wade — Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@1.8.0/dist/umd/lucide.min.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: '#050f0a',
+            surface: '#0d1f14',
+            surfaceLight: '#142b1a',
+            primary: '#22c55e',
+            secondary: '#4ade80',
+            textPrimary: '#f0f4ff',
+            textMuted: '#94a3b8',
+            border: 'rgba(34,197,94,0.2)',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-id="0" class="bg-bg text-textPrimary font-sans">
+  <app-icon data-id="1" hidden data-icon="code-2" data-palette="Dark"></app-icon>
+
+  <!-- Skip Link -->
+  <a data-id="2" href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ========== NAVBAR ========== -->
+  <header data-id="3" class="navbar" id="navbar-a1b2" role="banner">
+    <div data-id="4" class="max-w-7xl mx-auto h-full flex items-center justify-between px-5 md:px-8">
+      <!-- Logo -->
+      <a data-id="5" href="#hero" id="logo-link-c3d4" class="text-2xl font-black gradient-text tracking-tight border border-border rounded-lg px-3 py-1 hover:opacity-80 transition-opacity" aria-label="Scroll to top">CW</a>
+
+      <!-- Desktop Nav -->
+      <nav data-id="6" class="hidden md:flex items-center gap-8" aria-label="Primary navigation">
+        <a data-id="7" href="#hero" class="nav-link active" data-nav="hero">Home</a>
+        <a data-id="8" href="#about" class="nav-link" data-nav="about">About</a>
+        <a data-id="9" href="#skills" class="nav-link" data-nav="skills">Skills</a>
+        <a data-id="10" href="#projects" class="nav-link" data-nav="projects">Projects</a>
+        <a data-id="11" href="#contact" class="nav-link" data-nav="contact">Contact</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button data-id="12" id="hamburger-btn-e5f6" class="md:hidden p-2 text-textMuted hover:text-textPrimary transition-colors" aria-label="Open navigation menu" aria-expanded="false">
+        <i data-id="13" data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <nav data-id="14" id="mobile-menu-g7h8" class="mobile-menu fixed inset-0 bg-bg z-[110] flex flex-col p-6" aria-label="Mobile navigation">
+    <div data-id="15" class="flex items-center justify-between mb-10">
+      <span data-id="16" class="text-2xl font-black gradient-text tracking-tight">CW</span>
+      <button data-id="17" id="mobile-close-i9j0" class="p-2 text-textMuted hover:text-textPrimary transition-colors" aria-label="Close navigation menu">
+        <i data-id="18" data-lucide="x" class="w-6 h-6"></i>
+      </button>
+    </div>
+    <div data-id="19" class="flex flex-col gap-6">
+      <a data-id="20" href="#hero" class="text-xl font-semibold text-textMuted hover:text-textPrimary transition-colors mobile-nav-link">Home</a>
+      <a data-id="21" href="#about" class="text-xl font-semibold text-textMuted hover:text-textPrimary transition-colors mobile-nav-link">About</a>
+      <a data-id="22" href="#skills" class="text-xl font-semibold text-textMuted hover:text-textPrimary transition-colors mobile-nav-link">Skills</a>
+      <a data-id="23" href="#projects" class="text-xl font-semibold text-textMuted hover:text-textPrimary transition-colors mobile-nav-link">Projects</a>
+      <a data-id="24" href="#contact" class="text-xl font-semibold text-textMuted hover:text-textPrimary transition-colors mobile-nav-link">Contact</a>
+    </div>
+    <div data-id="25" class="mt-auto flex gap-5 pt-8">
+      <a data-id="26" href="https://github.com/CharlesW1117" target="_blank" rel="noopener noreferrer" class="text-textMuted hover:text-secondary transition-colors" aria-label="GitHub">
+        <svg data-id="27" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path data-id="28" d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.333-1.754-1.333-1.754-1.089-.745.083-.73.083-.73 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.3 1.23A11.51 11.51 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.29-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.91 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.014 2.898-.014 3.293 0 .322.216.694.825.576C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/></svg>
+      </a>
+      <a data-id="29" href="https://linkedin.com/in/charles-wadejr-47b8a4197" target="_blank" rel="noopener noreferrer" class="text-textMuted hover:text-secondary transition-colors" aria-label="LinkedIn">
+        <svg data-id="30" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path data-id="31" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </a>
+      <a data-id="32" href="mailto:charleskwadejr1088@gmail.com" class="text-textMuted hover:text-secondary transition-colors" aria-label="Email">
+        <svg data-id="33" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect data-id="34" x="2" y="4" width="20" height="16" rx="2"/><path data-id="35" d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main data-id="36" id="main-content">
+
+    <!-- ========== HERO SECTION ========== -->
+    <section data-id="37" id="hero" class="hero-section" aria-label="Hero introduction">
+      <div data-id="38" class="dot-pattern"></div>
+      <div data-id="39" class="orb orb-1"></div>
+      <div data-id="40" class="orb orb-2"></div>
+      <div data-id="41" class="orb orb-3"></div>
+
+      <div data-id="42" class="relative z-10 text-center px-5 max-w-3xl mx-auto">
+        <div data-id="43" class="pill-badge mb-6">Available for Opportunities ✦</div>
+
+        <h1 data-id="44" id="hero-heading-k1l2" class="font-black tracking-tight mb-3" style="font-size: clamp(2.5rem, 6vw, 5rem); line-height: 1.1;">
+          Hi, I'm <span data-id="45" class="gradient-text">Charles Wade</span>
+        </h1>
+
+        <h2 data-id="46" id="hero-subtitle-m3n4" class="text-textMuted font-medium mb-4" style="font-size: clamp(1.1rem, 2.5vw, 1.6rem);">
+          Full-Stack Software Engineer
+        </h2>
+
+        <div data-id="47" class="text-secondary font-semibold text-lg md:text-xl mb-5 h-8">
+          <span data-id="48" id="typing-text-o5p6"></span><span data-id="49" class="typing-cursor"></span>
+        </div>
+
+        <p data-id="50" id="hero-bio-q7r8" class="text-textMuted max-w-xl mx-auto mb-8 text-sm md:text-base">
+          Building purposeful, performant web experiences — from Oklahoma City to everywhere.
+        </p>
+
+        <div data-id="51" class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
+          <a data-id="52" href="#projects" id="cta-work-s9t0" class="btn-gradient inline-flex items-center gap-2 px-7 py-3.5 rounded-xl text-white font-semibold text-sm min-h-[44px]">
+            View My Work
+            <i data-id="53" data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+          <a data-id="54" href="resume.pdf" download="Charles_Wade_Resume.pdf" id="cta-resume-u1v2" class="btn-outline inline-flex items-center gap-2 px-7 py-3.5 rounded-xl text-textPrimary font-semibold text-sm min-h-[44px]">
+            <i data-id="55" data-lucide="download" class="w-4 h-4"></i>
+            Download Resume
+          </a>
+        </div>
+
+        <div data-id="56" class="flex items-center justify-center gap-6 mb-12">
+          <a data-id="57" href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-icon-link text-textMuted" aria-label="GitHub profile">
+            <svg data-id="58" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path data-id="59" d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.333-1.754-1.333-1.754-1.089-.745.083-.73.083-.73 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.3 1.23A11.51 11.51 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.29-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.91 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.014 2.898-.014 3.293 0 .322.216.694.825.576C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a data-id="60" href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-icon-link text-textMuted" aria-label="LinkedIn profile">
+            <svg data-id="61" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path data-id="62" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a data-id="63" href="mailto:charleskwadejr1088@gmail.com" class="social-icon-link text-textMuted" aria-label="Send email">
+            <svg data-id="64" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect data-id="65" x="2" y="4" width="20" height="16" rx="2"/><path data-id="66" d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+        </div>
+
+        <div data-id="67" class="scroll-indicator flex flex-col items-center text-textMuted">
+          <span data-id="68" class="text-xs mb-1 tracking-widest uppercase">Scroll</span>
+          <i data-id="69" data-lucide="chevron-down" class="w-5 h-5"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gradient Divider -->
+    <hr data-id="70" class="gradient-divider" />
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section data-id="71" id="about" class="py-20 md:py-28 px-5 md:px-8" aria-label="About Charles Wade">
+      <div data-id="72" class="max-w-6xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
+        <!-- Left: Avatar Card -->
+        <div data-id="73" class="reveal flex flex-col items-center text-center lg:min-w-[280px]">
+          <div data-id="74" class="avatar-ring w-40 h-40 md:w-48 md:h-48 mb-5">
+            <div data-id="75" class="avatar-inner w-full h-full">
+              <span data-id="76" class="gradient-text text-5xl md:text-6xl font-black">CW</span>
+            </div>
+          </div>
+          <h3 data-id="77" class="text-xl font-bold mb-1">Charles Wade</h3>
+          <span data-id="78" class="text-sm text-textMuted bg-surfaceLight px-3 py-1 rounded-full mb-5">Full-Stack Engineer</span>
+          <div data-id="79" class="flex flex-wrap justify-center gap-2">
+            <span data-id="80" class="text-xs bg-surface border border-border px-3 py-1.5 rounded-full text-textMuted">5+ Years Leadership</span>
+            <span data-id="81" class="text-xs bg-surface border border-border px-3 py-1.5 rounded-full text-textMuted">10+ Technologies</span>
+            <span data-id="82" class="text-xs bg-surface border border-border px-3 py-1.5 rounded-full text-textMuted">Grad: July 2026</span>
+          </div>
+        </div>
+
+        <!-- Right: Text Content -->
+        <div data-id="83" class="flex-1">
+          <span data-id="84" class="reveal text-secondary text-xs font-semibold tracking-[0.2em] uppercase mb-3 block">// about me</span>
+          <h2 data-id="85" id="about-heading-w3x4" class="reveal reveal-delay-1 text-2xl md:text-3xl lg:text-4xl font-bold mb-6 tracking-tight">
+            Turning ideas into <span data-id="86" class="gradient-text">impactful software</span>
+          </h2>
+          <div data-id="87" class="space-y-4 text-textMuted text-sm md:text-base leading-relaxed">
+            <p data-id="88" class="reveal reveal-delay-2">I'm a full-stack software engineering student at Fullstack Academy, set to graduate in July 2026. With a background spanning business administration (BBA, Mid-America Christian University) and behavioral science (Northern Oklahoma College), I bring a uniquely human perspective to every line of code I write.</p>
+            <p data-id="89" class="reveal reveal-delay-3">Before pivoting to tech, I spent years leading teams and solving complex problems — from managing operations at Paycom's Technical Analysis Center to running a 20+ person crew in fast-paced environments. That experience taught me how to communicate clearly, stay calm under pressure, and deliver results.</p>
+            <p data-id="90" class="reveal reveal-delay-4">Today I build full-stack web applications using React, Node.js, Express, and PostgreSQL. I'm passionate about clean code, intuitive UI/UX, and building software that makes people's lives genuinely easier. I'm remote-ready and open to roles where mentorship, mission, and craft all matter.</p>
+          </div>
+
+          <div data-id="91" class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+            <div data-id="92" class="reveal reveal-delay-5 glass rounded-xl p-5">
+              <div data-id="93" class="flex items-center gap-2 mb-2">
+                <i data-id="94" data-lucide="graduation-cap" class="w-5 h-5 text-secondary"></i>
+                <span data-id="95" class="font-semibold text-sm">Education</span>
+              </div>
+              <p data-id="96" class="text-textMuted text-xs leading-relaxed">Fullstack Academy — Software Engineering (2026)<br data-id="97">Mid-America Christian University — BBA<br data-id="98">Northern Oklahoma College — Behavioral Science</p>
+            </div>
+            <div data-id="99" class="reveal reveal-delay-6 glass rounded-xl p-5">
+              <div data-id="100" class="flex items-center gap-2 mb-2">
+                <i data-id="101" data-lucide="map-pin" class="w-5 h-5 text-secondary"></i>
+                <span data-id="102" class="font-semibold text-sm">Location</span>
+              </div>
+              <p data-id="103" class="text-textMuted text-xs leading-relaxed">Oklahoma City / Edmond, OK<br data-id="104">Open to remote opportunities<br data-id="105">Central Time Zone (CDT)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr data-id="106" class="gradient-divider" />
+
+    <!-- ========== SKILLS SECTION ========== -->
+    <section data-id="107" id="skills" class="py-20 md:py-28 px-5 md:px-8" aria-label="Technical skills">
+      <div data-id="108" class="max-w-6xl mx-auto">
+        <div data-id="109" class="text-center mb-14">
+          <span data-id="110" class="reveal text-secondary text-xs font-semibold tracking-[0.2em] uppercase mb-3 block">// tech stack</span>
+          <h2 data-id="111" id="skills-heading-y5z6" class="reveal reveal-delay-1 text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight">
+            My <span data-id="112" class="gradient-text">Technical Toolkit</span>
+          </h2>
+        </div>
+
+        <div data-id="113" id="skills-grid-a7b8" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+          <div data-id="114" class="reveal reveal-delay-1 glass rounded-xl p-5 skill-card">
+            <div data-id="115" class="flex items-center gap-3 mb-3">
+              <span data-id="116" class="text-2xl" aria-hidden="true">⚡</span>
+              <div data-id="117">
+                <h3 data-id="118" class="font-semibold text-sm">JavaScript (ES6+)</h3>
+                <span data-id="119" class="text-xs text-secondary">Proficient</span>
+              </div>
+            </div>
+            <div data-id="120" class="progress-track"><div data-id="121" class="progress-fill" style="--progress: 90%"></div></div>
+          </div>
+
+          <div data-id="122" class="reveal reveal-delay-2 glass rounded-xl p-5 skill-card">
+            <div data-id="123" class="flex items-center gap-3 mb-3">
+              <span data-id="124" class="text-2xl" aria-hidden="true">⚛️</span>
+              <div data-id="125">
+                <h3 data-id="126" class="font-semibold text-sm">React</h3>
+                <span data-id="127" class="text-xs text-secondary">Proficient</span>
+              </div>
+            </div>
+            <div data-id="128" class="progress-track"><div data-id="129" class="progress-fill" style="--progress: 88%"></div></div>
+          </div>
+
+          <div data-id="130" class="reveal reveal-delay-3 glass rounded-xl p-5 skill-card">
+            <div data-id="131" class="flex items-center gap-3 mb-3">
+              <span data-id="132" class="text-2xl" aria-hidden="true">🟢</span>
+              <div data-id="133">
+                <h3 data-id="134" class="font-semibold text-sm">Node.js</h3>
+                <span data-id="135" class="text-xs text-secondary">Proficient</span>
+              </div>
+            </div>
+            <div data-id="136" class="progress-track"><div data-id="137" class="progress-fill" style="--progress: 85%"></div></div>
+          </div>
+
+          <div data-id="138" class="reveal reveal-delay-4 glass rounded-xl p-5 skill-card">
+            <div data-id="139" class="flex items-center gap-3 mb-3">
+              <span data-id="140" class="text-2xl" aria-hidden="true">🚀</span>
+              <div data-id="141">
+                <h3 data-id="142" class="font-semibold text-sm">Express.js</h3>
+                <span data-id="143" class="text-xs text-secondary">Intermediate</span>
+              </div>
+            </div>
+            <div data-id="144" class="progress-track"><div data-id="145" class="progress-fill" style="--progress: 82%"></div></div>
+          </div>
+
+          <div data-id="146" class="reveal reveal-delay-5 glass rounded-xl p-5 skill-card">
+            <div data-id="147" class="flex items-center gap-3 mb-3">
+              <span data-id="148" class="text-2xl" aria-hidden="true">🐘</span>
+              <div data-id="149">
+                <h3 data-id="150" class="font-semibold text-sm">PostgreSQL</h3>
+                <span data-id="151" class="text-xs text-secondary">Intermediate</span>
+              </div>
+            </div>
+            <div data-id="152" class="progress-track"><div data-id="153" class="progress-fill" style="--progress: 78%"></div></div>
+          </div>
+
+          <div data-id="154" class="reveal reveal-delay-6 glass rounded-xl p-5 skill-card">
+            <div data-id="155" class="flex items-center gap-3 mb-3">
+              <span data-id="156" class="text-2xl" aria-hidden="true">🎨</span>
+              <div data-id="157">
+                <h3 data-id="158" class="font-semibold text-sm">HTML & CSS</h3>
+                <span data-id="159" class="text-xs text-secondary">Proficient</span>
+              </div>
+            </div>
+            <div data-id="160" class="progress-track"><div data-id="161" class="progress-fill" style="--progress: 92%"></div></div>
+          </div>
+
+          <div data-id="162" class="reveal reveal-delay-7 glass rounded-xl p-5 skill-card">
+            <div data-id="163" class="flex items-center gap-3 mb-3">
+              <span data-id="164" class="text-2xl" aria-hidden="true">🔗</span>
+              <div data-id="165">
+                <h3 data-id="166" class="font-semibold text-sm">REST APIs</h3>
+                <span data-id="167" class="text-xs text-secondary">Proficient</span>
+              </div>
+            </div>
+            <div data-id="168" class="progress-track"><div data-id="169" class="progress-fill" style="--progress: 88%"></div></div>
+          </div>
+
+          <div data-id="170" class="reveal reveal-delay-8 glass rounded-xl p-5 skill-card">
+            <div data-id="171" class="flex items-center gap-3 mb-3">
+              <span data-id="172" class="text-2xl" aria-hidden="true">📂</span>
+              <div data-id="173">
+                <h3 data-id="174" class="font-semibold text-sm">Git & GitHub</h3>
+                <span data-id="175" class="text-xs text-secondary">Proficient</span>
+              </div>
+            </div>
+            <div data-id="176" class="progress-track"><div data-id="177" class="progress-fill" style="--progress: 86%"></div></div>
+          </div>
+
+          <div data-id="178" class="reveal reveal-delay-9 glass rounded-xl p-5 skill-card">
+            <div data-id="179" class="flex items-center gap-3 mb-3">
+              <span data-id="180" class="text-2xl" aria-hidden="true">💻</span>
+              <div data-id="181">
+                <h3 data-id="182" class="font-semibold text-sm">VS Code</h3>
+                <span data-id="183" class="text-xs text-secondary">Proficient</span>
+              </div>
+            </div>
+            <div data-id="184" class="progress-track"><div data-id="185" class="progress-fill" style="--progress: 95%"></div></div>
+          </div>
+
+          <div data-id="186" class="reveal reveal-delay-9 glass rounded-xl p-5 skill-card">
+            <div data-id="187" class="flex items-center gap-3 mb-3">
+              <span data-id="188" class="text-2xl" aria-hidden="true">🧠</span>
+              <div data-id="189">
+                <h3 data-id="190" class="font-semibold text-sm">Problem Solving</h3>
+                <span data-id="191" class="text-xs text-secondary">Expert</span>
+              </div>
+            </div>
+            <div data-id="192" class="progress-track"><div data-id="193" class="progress-fill" style="--progress: 97%"></div></div>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div data-id="194" class="mt-12 text-center">
+          <h3 data-id="195" class="reveal text-lg font-semibold mb-5 text-textMuted">Soft Skills</h3>
+          <div data-id="196" class="reveal reveal-delay-1 flex flex-wrap justify-center gap-3">
+            <span data-id="197" class="soft-skill-pill">Team Leadership</span>
+            <span data-id="198" class="soft-skill-pill">Clear Communication</span>
+            <span data-id="199" class="soft-skill-pill">Fast Learner</span>
+            <span data-id="200" class="soft-skill-pill">Calm Under Pressure</span>
+            <span data-id="201" class="soft-skill-pill">Detail-Oriented</span>
+            <span data-id="202" class="soft-skill-pill">Client-Focused</span>
+            <span data-id="203" class="soft-skill-pill">Mentorship</span>
+            <span data-id="204" class="soft-skill-pill">Adaptability</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr data-id="205" class="gradient-divider" />
+
+    <!-- ========== PROJECTS SECTION ========== -->
+    <section data-id="206" id="projects" class="py-20 md:py-28 px-5 md:px-8" aria-label="Featured projects">
+      <div data-id="207" class="max-w-6xl mx-auto">
+        <div data-id="208" class="text-center mb-10">
+          <span data-id="209" class="reveal text-secondary text-xs font-semibold tracking-[0.2em] uppercase mb-3 block">// featured work</span>
+          <h2 data-id="210" id="projects-heading-c9d0" class="reveal reveal-delay-1 text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight">
+            Projects I've <span data-id="211" class="gradient-text">Built</span>
+          </h2>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div data-id="212" class="reveal reveal-delay-2 flex justify-center gap-1 mb-10 flex-wrap">
+          <button data-id="213" class="filter-tab active" data-filter="all">All</button>
+          <button data-id="214" class="filter-tab" data-filter="frontend">Frontend</button>
+          <button data-id="215" class="filter-tab" data-filter="full-stack">Full-Stack</button>
+          <button data-id="216" class="filter-tab" data-filter="api">API</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div data-id="217" id="projects-grid-e1f2" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <!-- Project 1: Fitness Trackr Pro -->
+          <div data-id="218" class="reveal reveal-delay-1 project-card glass rounded-2xl overflow-hidden" data-category="full-stack" data-glow="green-dark">
+            <div data-id="219" class="h-2.5" style="background: linear-gradient(135deg, #22c55e, #16a34a)"></div>
+            <div data-id="220" class="p-6">
+              <div data-id="221" class="flex items-center gap-3 mb-3">
+                <span data-id="222" class="text-3xl" aria-hidden="true">💪</span>
+                <h3 data-id="223" class="font-bold text-lg">Fitness Trackr Pro</h3>
+              </div>
+              <div data-id="224" class="flex flex-wrap gap-1.5 mb-4">
+                <span data-id="225" class="text-[0.65rem] bg-surfaceLight px-2 py-0.5 rounded-full text-textMuted">React</span>
+                <span data-id="226" class="text-[0.65rem] bg-surfaceLight px-2 py-0.5 rounded-full text-textMuted">Node.js</span>
+                <span data-id="227" class="text-[0.65rem] bg-surfaceLight px-2 py-0.5 rounded-full text-textMuted">Express</span>
+                <span data-id="228" class="text-[0.65rem] bg-surfaceLight px-2 py-0.5 rounded-full text-textMuted">PostgreSQL</span>
+                <span data-id="229" class="text-[0.65rem] bg-surfaceLight px-2 py-0.5 rounded-full text-textMuted">REST API</span>
+              </div>
+              <p data-id="230" class="text-textMuted text-sm leading-relaxed mb-5">A full-stack fitness tracking application that lets users log workouts, create activities, and manage their fitness journey. Features user authentication, protected routes, and a clean dashboard interface.</p>
+              <div data-id="231" class="flex gap-3">
+                <a data-id="232" href="#" class="btn-outline inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-xs font-semibold min-h-[44px]">
+                  <i data-id="233" data-lucide="github" class="w-3.5 h-3.5"></i> GitHub
+                </a>
+                <a data-id="234" href="#" class="btn-gradient inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-xs font-semibold text-white min-h-[44px]">
+                  <i data-id="235" data-lucide="external-link" class="w-3.5 h-3.5"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Book Buddy -->
+          <div data-id="236" class="reveal reveal-delay-2 project-card glass rounded-2xl overflow-hidden" data-category="frontend" data-glow="green-mint">
+            <div data-id="237" class="h-2.5" style="background: linear-gradient(135deg, #4ade80, #34d399)"></div>
+            <div data-id="238" class="p-6">
+              <div data-id="239" class="flex items-center gap-3 mb-3">
+                <span data-id="240" class="text-3xl" aria-hidden="true">📚</span>
+                <h3 data-id="241" class="font-bold text-lg">Book Buddy</h3>
+              </div>
+              <div data-id="242" class="flex flex-wrap gap-1.5 mb-4">
+                <span data-id="243" class="text-[0.65rem] bg-surfaceLight px-2 py-0.5 rounded-full text-textMuted">React</span>
+                <span data-id="244" class="text-[0.65rem] bg-surfaceLight px-2 py-0.5 rounded-full text-textMuted">REST API</span>
+                <span data-id="245" class="text-[0.65rem] bg-surfaceLight px-2 py-0.5 rounded-full text-textMuted">JavaScript</span>
+              </div>
+              <p data-id="246" class="text-textMuted text-sm leading-relaxed mb-5">An interactive book discovery app powered by an external API. Users can search, browse, and save books to a personal reading list with a responsive, user-friendly interface.</p>
+              <div data-id="247" class="flex gap-3">
+                <a data-id="248" href="#" class="btn-outline inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-xs font-semibold min-h-[44px]">
+                  <i data-id="249" data-lucide="github" class="w-3.5 h-3.5"></i> GitHub
+                </a>
+                <a data-id="250" href="#" class="btn-gradient inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-xs font-semibold text-white min-h-[44px]">
+                  <i data-id="251" data-lucide="external-link" class="w-3.5 h-3.5"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Puppy Bowl Manager -->
+          <div data-id="252" class="reveal reveal-delay-3 project-card glass rounded-2xl overflow-hidden" data-category="api" data-glow="orange-amber">
+            <div data-id="253" class="h-2.5" style="background: linear-gradient(135deg, #fb923c, #f59e0b)"></div>
+            <div data-id="254" class="p-6">
+              <div data-id="255" class="flex items-center gap-3 mb-3">
+                <span data-id="256" class="text-3xl" aria-hidden="true">🐾</span>
+                <h3 data-id="257" class="font-bold text-lg">Puppy Bowl Manager</h3>
+              </div>
+              <div data-id="258" class="flex flex-wrap gap-1.5 mb-4">
+                <span data-id="259" class="text-[0.65rem] bg-surfaceLight px-2 py-0.5 rounded-full text-textMuted">React</span>
+                <span data-id="260" class="text-[0.65rem] bg-surfaceLight px-2 py-0.5 rounded-full text-textMuted">REST API</span>
+                <span data-id="261" class="text-[0.65rem] bg-surfaceLight px-2 py-0.5 rounded-full text-textMuted">JavaScript</span>
+                <span data-id="262" class="text-[0.65rem] bg-surfaceLight px-2 py-0.5 rounded-full text-textMuted">CSS</span>
+              </div>
+              <p data-id="263" class="text-textMuted text-sm leading-relaxed mb-5">A dynamic roster management app for the famous Puppy Bowl! Fetches live player data from an API, renders team rosters, and allows interactive player management.</p>
+              <div data-id="264" class="flex gap-3">
+                <a data-id="265" href="#" class="btn-outline inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-xs font-semibold min-h-[44px]">
+                  <i data-id="266" data-lucide="github" class="w-3.5 h-3.5"></i> GitHub
+                </a>
+                <a data-id="267" href="#" class="btn-gradient inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-xs font-semibold text-white min-h-[44px]">
+                  <i data-id="268" data-lucide="external-link" class="w-3.5 h-3.5"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Whack-a-Mole -->
+          <div data-id="269" class="reveal reveal-delay-4 project-card glass rounded-2xl overflow-hidden" data-category="frontend" data-glow="green-emerald">
+            <div data-id="270" class="h-2.5" style="background: linear-gradient(135deg, #22c55e, #10b981)"></div>
+            <div data-id="271" class="p-6">
+              <div data-id="272" class="flex items-center gap-3 mb-3">
+                <span data-id="273" class="text-3xl" aria-hidden="true">🎯</span>
+                <h3 data-id="274" class="font-bold text-lg">Whack-a-Mole</h3>
+              </div>
+              <div data-id="275" class="flex flex-wrap gap-1.5 mb-4">
+                <span data-id="276" class="text-[0.65rem] bg-surfaceLight px-2 py-0.5 rounded-full text-textMuted">React</span>
+                <span data-id="277" class="text-[0.65rem] bg-surfaceLight px-2 py-0.5 rounded-full text-textMuted">JavaScript</span>
+                <span data-id="278" class="text-[0.65rem] bg-surfaceLight px-2 py-0.5 rounded-full text-textMuted">CSS Animations</span>
+              </div>
+              <p data-id="279" class="text-textMuted text-sm leading-relaxed mb-5">A classic arcade game rebuilt in React with component-based architecture, state management, score tracking, difficulty levels, and smooth CSS animations.</p>
+              <div data-id="280" class="flex gap-3">
+                <a data-id="281" href="#" class="btn-outline inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-xs font-semibold min-h-[44px]">
+                  <i data-id="282" data-lucide="github" class="w-3.5 h-3.5"></i> GitHub
+                </a>
+                <a data-id="283" href="#" class="btn-gradient inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-xs font-semibold text-white min-h-[44px]">
+                  <i data-id="284" data-lucide="external-link" class="w-3.5 h-3.5"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: Does It Glow? -->
+          <div data-id="285" class="reveal reveal-delay-5 project-card glass rounded-2xl overflow-hidden" data-category="frontend" data-glow="green-lime">
+            <div data-id="286" class="h-2.5" style="background: linear-gradient(135deg, #84cc16, #a3e635)"></div>
+            <div data-id="287" class="p-6">
+              <div data-id="288" class="flex items-center gap-3 mb-3">
+                <span data-id="289" class="text-3xl" aria-hidden="true">✨</span>
+                <h3 data-id="290" class="font-bold text-lg">Does It Glow?</h3>
+              </div>
+              <div data-id="291" class="flex flex-wrap gap-1.5 mb-4">
+                <span data-id="292" class="text-[0.65rem] bg-surfaceLight px-2 py-0.5 rounded-full text-textMuted">React</span>
+                <span data-id="293" class="text-[0.65rem] bg-surfaceLight px-2 py-0.5 rounded-full text-textMuted">Context API</span>
+                <span data-id="294" class="text-[0.65rem] bg-surfaceLight px-2 py-0.5 rounded-full text-textMuted">CSS</span>
+              </div>
+              <p data-id="295" class="text-textMuted text-sm leading-relaxed mb-5">A React theming exercise demonstrating advanced Context API patterns. Users toggle between light and dark modes with seamless theme propagation across all components.</p>
+              <div data-id="296" class="flex gap-3">
+                <a data-id="297" href="#" class="btn-outline inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-xs font-semibold min-h-[44px]">
+                  <i data-id="298" data-lucide="github" class="w-3.5 h-3.5"></i> GitHub
+                </a>
+                <a data-id="299" href="#" class="btn-gradient inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-xs font-semibold text-white min-h-[44px]">
+                  <i data-id="300" data-lucide="external-link" class="w-3.5 h-3.5"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6: Portfolio Website -->
+          <div data-id="301" class="reveal reveal-delay-6 project-card glass rounded-2xl overflow-hidden" data-category="frontend" data-glow="green-teal">
+            <div data-id="302" class="h-2.5" style="background: linear-gradient(135deg, #22c55e, #4ade80)"></div>
+            <div data-id="303" class="p-6">
+              <div data-id="304" class="flex items-center gap-3 mb-3">
+                <span data-id="305" class="text-3xl" aria-hidden="true">🌐</span>
+                <h3 data-id="306" class="font-bold text-lg">Portfolio Website</h3>
+              </div>
+              <div data-id="307" class="flex flex-wrap gap-1.5 mb-4">
+                <span data-id="308" class="text-[0.65rem] bg-surfaceLight px-2 py-0.5 rounded-full text-textMuted">HTML</span>
+                <span data-id="309" class="text-[0.65rem] bg-surfaceLight px-2 py-0.5 rounded-full text-textMuted">CSS</span>
+                <span data-id="310" class="text-[0.65rem] bg-surfaceLight px-2 py-0.5 rounded-full text-textMuted">JavaScript</span>
+              </div>
+              <p data-id="311" class="text-textMuted text-sm leading-relaxed mb-5">This very portfolio — built from scratch with vanilla HTML, CSS, and JavaScript. Responsive, accessible, and designed to impress with smooth animations and a modern dark aesthetic.</p>
+              <div data-id="312" class="flex gap-3">
+                <a data-id="313" href="#" class="btn-outline inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-xs font-semibold min-h-[44px]">
+                  <i data-id="314" data-lucide="github" class="w-3.5 h-3.5"></i> GitHub
+                </a>
+                <a data-id="315" href="#" class="btn-gradient inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-xs font-semibold text-white min-h-[44px]">
+                  <i data-id="316" data-lucide="external-link" class="w-3.5 h-3.5"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <hr data-id="317" class="gradient-divider" />
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section data-id="318" id="contact" class="py-20 md:py-28 px-5 md:px-8" aria-label="Contact information">
+      <div data-id="319" class="max-w-6xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-16">
+        <!-- Left: Info -->
+        <div data-id="320" class="flex-1">
+          <span data-id="321" class="reveal text-secondary text-xs font-semibold tracking-[0.2em] uppercase mb-3 block">// get in touch</span>
+          <h2 data-id="322" id="contact-heading-g3h4" class="reveal reveal-delay-1 text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight mb-5">
+            Let's Build Something <span data-id="323" class="gradient-text">Great</span>
+          </h2>
+          <p data-id="324" class="reveal reveal-delay-2 text-textMuted text-sm md:text-base leading-relaxed mb-8 max-w-lg">
+            I'm currently open to full-time roles, freelance projects, and collaborative opportunities. Whether you have a project in mind or just want to connect — my inbox is always open.
+          </p>
+
+          <div data-id="325" class="space-y-4 mb-8">
+            <div data-id="326" class="reveal reveal-delay-3 flex items-center gap-4">
+              <div data-id="327" class="w-10 h-10 rounded-lg bg-surfaceLight flex items-center justify-center flex-shrink-0">
+                <i data-id="328" data-lucide="mail" class="w-5 h-5 text-secondary"></i>
+              </div>
+              <div data-id="329">
+                <span data-id="330" class="text-xs text-textMuted block">Email</span>
+                <span data-id="331" class="text-sm font-medium">charleskwadejr1088@gmail.com</span>
+              </div>
+            </div>
+            <div data-id="332" class="reveal reveal-delay-4 flex items-center gap-4">
+              <div data-id="333" class="w-10 h-10 rounded-lg bg-surfaceLight flex items-center justify-center flex-shrink-0">
+                <i data-id="334" data-lucide="map-pin" class="w-5 h-5 text-secondary"></i>
+              </div>
+              <div data-id="335">
+                <span data-id="336" class="text-xs text-textMuted block">Location</span>
+                <span data-id="337" class="text-sm font-medium">Oklahoma City / Edmond, OK (Remote-Ready)</span>
+              </div>
+            </div>
+            <div data-id="338" class="reveal reveal-delay-5 flex items-center gap-4">
+              <div data-id="339" class="w-10 h-10 rounded-lg bg-surfaceLight flex items-center justify-center flex-shrink-0">
+                <i data-id="340" data-lucide="graduation-cap" class="w-5 h-5 text-secondary"></i>
+              </div>
+              <div data-id="341">
+                <span data-id="342" class="text-xs text-textMuted block">Education</span>
+                <span data-id="343" class="text-sm font-medium">Fullstack Academy — Graduating July 2026</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Cards -->
+          <div data-id="344" class="space-y-3">
+            <a data-id="345" href="https://github.com/" target="_blank" rel="noopener noreferrer" class="reveal reveal-delay-6 contact-social-card glass rounded-xl p-4 flex items-center gap-4 group cursor-pointer block">
+              <svg data-id="346" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-textMuted group-hover:text-secondary transition-colors flex-shrink-0"><path data-id="347" d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.333-1.754-1.333-1.754-1.089-.745.083-.73.083-.73 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.3 1.23A11.51 11.51 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.29-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.91 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.014 2.898-.014 3.293 0 .322.216.694.825.576C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              <div data-id="348" class="flex-1">
+                <span data-id="349" class="text-sm font-semibold block">GitHub</span>
+                <span data-id="350" class="text-xs text-textMuted">View my repositories</span>
+              </div>
+              <i data-id="351" data-lucide="arrow-right" class="w-4 h-4 text-textMuted group-hover:text-secondary transition-colors flex-shrink-0"></i>
+            </a>
+            <a data-id="352" href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="reveal reveal-delay-7 contact-social-card glass rounded-xl p-4 flex items-center gap-4 group cursor-pointer block">
+              <svg data-id="353" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-textMuted group-hover:text-secondary transition-colors flex-shrink-0"><path data-id="354" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              <div data-id="355" class="flex-1">
+                <span data-id="356" class="text-sm font-semibold block">LinkedIn</span>
+                <span data-id="357" class="text-xs text-textMuted">Connect with me</span>
+              </div>
+              <i data-id="358" data-lucide="arrow-right" class="w-4 h-4 text-textMuted group-hover:text-secondary transition-colors flex-shrink-0"></i>
+            </a>
+            <a data-id="359" href="mailto:charleskwadejr1088@gmail.com" class="reveal reveal-delay-8 contact-social-card glass rounded-xl p-4 flex items-center gap-4 group cursor-pointer block">
+              <i data-id="360" data-lucide="mail" class="w-5 h-5 text-textMuted group-hover:text-secondary transition-colors flex-shrink-0"></i>
+              <div data-id="361" class="flex-1">
+                <span data-id="362" class="text-sm font-semibold block">Email</span>
+                <span data-id="363" class="text-xs text-textMuted">charleskwadejr1088@gmail.com</span>
+              </div>
+              <i data-id="364" data-lucide="arrow-right" class="w-4 h-4 text-textMuted group-hover:text-secondary transition-colors flex-shrink-0"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Contact Form -->
+        <div data-id="365" class="flex-1 max-w-lg w-full lg:max-w-none">
+          <div data-id="366" id="contact-form-wrapper-i5j6" class="reveal reveal-delay-2 glass rounded-2xl p-6 md:p-8">
+            <form data-id="367" id="contact-form-k7l8" novalidate>
+              <div data-id="368" class="mb-5">
+                <label data-id="369" for="form-name" class="block text-sm font-medium mb-2">Name</label>
+                <input data-id="370" id="form-name" type="text" class="form-input" placeholder="Your full name" required />
+              </div>
+              <div data-id="371" class="mb-5">
+                <label data-id="372" for="form-email" class="block text-sm font-medium mb-2">Email</label>
+                <input data-id="373" id="form-email" type="email" class="form-input" placeholder="you@example.com" required />
+              </div>
+              <div data-id="374" class="mb-5">
+                <label data-id="375" for="form-subject" class="block text-sm font-medium mb-2">Subject</label>
+                <input data-id="376" id="form-subject" type="text" class="form-input" placeholder="What's this about?" required />
+              </div>
+              <div data-id="377" class="mb-6">
+                <label data-id="378" for="form-message" class="block text-sm font-medium mb-2">Message</label>
+                <textarea data-id="379" id="form-message" class="form-input" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+              </div>
+              <button data-id="380" type="submit" id="form-submit-m9n0" class="btn-gradient w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl text-white font-semibold text-sm min-h-[44px]">
+                Send Message
+                <i data-id="381" data-lucide="arrow-right" class="w-4 h-4"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer data-id="382" class="relative border-t border-border" aria-label="Site footer">
+    <div data-id="383" class="gradient-divider absolute top-0 left-0 right-0"></div>
+    <div data-id="384" class="max-w-6xl mx-auto px-5 md:px-8 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p data-id="385" class="text-textMuted text-sm text-center md:text-left">
+        © 2026 Charles Wade. Built with ❤️ and JavaScript.
+      </p>
+      <nav data-id="386" class="flex items-center gap-6" aria-label="Footer navigation">
+        <a data-id="387" href="#about" class="text-textMuted hover:text-textPrimary text-sm transition-colors">About</a>
+        <a data-id="388" href="#projects" class="text-textMuted hover:text-textPrimary text-sm transition-colors">Projects</a>
+        <a data-id="389" href="#contact" class="text-textMuted hover:text-textPrimary text-sm transition-colors">Contact</a>
+      </nav>
+      <div data-id="390" class="flex items-center gap-4">
+        <a data-id="391" href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-icon-link text-textMuted" aria-label="GitHub">
+          <svg data-id="392" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path data-id="393" d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.333-1.754-1.333-1.754-1.089-.745.083-.73.083-.73 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.3 1.23A11.51 11.51 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.29-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.91 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.014 2.898-.014 3.293 0 .322.216.694.825.576C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a data-id="394" href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-icon-link text-textMuted" aria-label="LinkedIn">
+          <svg data-id="395" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path data-id="396" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a data-id="397" href="mailto:charleskwadejr1088@gmail.com" class="social-icon-link text-textMuted" aria-label="Email">
+          <svg data-id="398" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect data-id="399" x="2" y="4" width="20" height="16" rx="2"/><path data-id="400" d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </a>
+      </div>
+    </div>
+    <div data-id="401" class="text-center pb-4" style="display: none;">
+      <span data-id="402" class="text-textMuted text-xs">Made by Copilot</span>
+    </div>
+  </footer>
+
+  <!-- ========== SCRIPTS ========== -->
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // ===== Typing Animation =====
+    (function() {
+      const titles = ['JavaScript Developer', 'React Specialist', 'Node.js Engineer', 'Problem Solver'];
+      const el = document.getElementById('typing-text-o5p6');
+      let titleIndex = 0;
+      let charIndex = 0;
+      let isDeleting = false;
+      let typeSpeed = 80;
+
+      function type() {
+        const current = titles[titleIndex];
+        if (isDeleting) {
+          el.textContent = current.substring(0, charIndex - 1);
+          charIndex--;
+          typeSpeed = 40;
+        } else {
+          el.textContent = current.substring(0, charIndex + 1);
+          charIndex++;
+          typeSpeed = 80;
+        }
+
+        if (!isDeleting && charIndex === current.length) {
+          typeSpeed = 2000;
+          isDeleting = true;
+        } else if (isDeleting && charIndex === 0) {
+          isDeleting = false;
+          titleIndex = (titleIndex + 1) % titles.length;
+          typeSpeed = 400;
+        }
+
+        setTimeout(type, typeSpeed);
+      }
+      type();
+    })();
+
+    // ===== Scroll Reveal (IntersectionObserver) =====
+    (function() {
+      const reveals = document.querySelectorAll('.reveal');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+      reveals.forEach(el => observer.observe(el));
+    })();
+
+    // ===== Skills Progress Bar Animation =====
+    (function() {
+      const skillsSection = document.getElementById('skills');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('skills-visible');
+          }
+        });
+      }, { threshold: 0.2 });
+      observer.observe(skillsSection);
+    })();
+
+    // ===== Navbar Scroll Effect =====
+    (function() {
+      const navbar = document.getElementById('navbar-a1b2');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
+    })();
+
+    // ===== Active Nav Link Highlighting =====
+    (function() {
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('.nav-link[data-nav]');
+
+      function updateActiveLink() {
+        let current = '';
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop - 100;
+          if (window.scrollY >= sectionTop) {
+            current = section.getAttribute('id');
+          }
+        });
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('data-nav') === current) {
+            link.classList.add('active');
+          }
+        });
+      }
+      window.addEventListener('scroll', updateActiveLink);
+      updateActiveLink();
+    })();
+
+    // ===== Mobile Menu Toggle =====
+    (function() {
+      const hamburger = document.getElementById('hamburger-btn-e5f6');
+      const mobileMenu = document.getElementById('mobile-menu-g7h8');
+      const closeBtn = document.getElementById('mobile-close-i9j0');
+      const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+      hamburger.addEventListener('click', () => {
+        mobileMenu.classList.add('open');
+        hamburger.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+      });
+
+      function closeMenu() {
+        mobileMenu.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      }
+
+      closeBtn.addEventListener('click', closeMenu);
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', closeMenu);
+      });
+    })();
+
+    // ===== Project Filter =====
+    (function() {
+      const tabs = document.querySelectorAll('.filter-tab');
+      const cards = document.querySelectorAll('.project-card');
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          tabs.forEach(t => t.classList.remove('active'));
+          tab.classList.add('active');
+
+          const filter = tab.getAttribute('data-filter');
+
+          cards.forEach(card => {
+            const category = card.getAttribute('data-category');
+            if (filter === 'all' || category === filter) {
+              card.classList.remove('hidden-card');
+              card.style.opacity = '0';
+              card.style.transform = 'translateY(20px)';
+              requestAnimationFrame(() => {
+                card.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+              });
+            } else {
+              card.classList.add('hidden-card');
+            }
+          });
+        });
+      });
+    })();
+
+    // ===== Contact Form Submission =====
+    (function() {
+      const form = document.getElementById('contact-form-k7l8');
+      const wrapper = document.getElementById('contact-form-wrapper-i5j6');
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const name = document.getElementById('form-name').value.trim();
+        const email = document.getElementById('form-email').value.trim();
+        const subject = document.getElementById('form-subject').value.trim();
+        const message = document.getElementById('form-message').value.trim();
+
+        if (!name || !email || !subject || !message) {
+          [document.getElementById('form-name'), document.getElementById('form-email'),
+           document.getElementById('form-subject'), document.getElementById('form-message')].forEach(input => {
+            if (!input.value.trim()) {
+              input.style.borderColor = '#f43f5e';
+              setTimeout(() => { input.style.borderColor = ''; }, 2000);
+            }
+          });
+          return;
+        }
+
+        // Show success state
+        wrapper.innerHTML = `
+          <div class="success-anim flex flex-col items-center justify-center text-center py-12">
+            <div class="w-20 h-20 rounded-full flex items-center justify-center mb-6" style="background: linear-gradient(135deg, #22c55e, #4ade80)">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Message Sent!</h3>
+            <p class="text-textMuted text-sm max-w-xs">Thanks for reaching out, I'll get back to you soon.</p>
+          </div>
+        `;
+      });
+    })();
+
+    // ===== Logo scroll to top =====
+    (function() {
+      const logo = document.getElementById('logo-link-c3d4');
+      logo.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    })();
+  </script>
+</body>
+</html><script src="script.js"></script>
