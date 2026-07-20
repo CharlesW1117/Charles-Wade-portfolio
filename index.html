@@ -1,557 +1,1619 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="dark" name="color-scheme"/>
-<title>Charles Wade – Full-Stack Developer Portfolio</title>
-<script src="https://cdn.tailwindcss.com"></script>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="dark" name="color-scheme" />
+    <title>Charles Wade – Full-Stack Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 
-<script defer="" src="https://unpkg.com/lucide@latest"></script>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+    <script defer="" src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
 
-<link href="styles.css" rel="stylesheet"/></head>
-<body data-id="0">
-<app-icon data-icon="code-2" data-id="1" data-palette="Green" hidden=""></app-icon>
-<!-- NAVIGATION -->
-<nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" data-id="2" id="main-nav-w4d2" style="background: transparent;">
-<div class="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between" data-id="3">
-<a class="text-lg font-bold gradient-text tracking-tight" data-id="4" href="#hero-section-c1d2">Charles Wade</a>
-<div class="hidden md:flex items-center gap-6" data-id="5" id="desktop-nav-e3f4">
-<a class="nav-link active-link" data-id="6" href="#hero-section-c1d2">Home</a>
-<a class="nav-link" data-id="7" href="#about-section-a1b2">About</a>
-<a class="nav-link" data-id="8" href="#skills-journey-g5h6">Skills</a>
-<a class="nav-link" data-id="9" href="#projects-section-k9l0">Projects</a>
-<a class="nav-link" data-id="10" href="#experience-section-x1y2">Experience</a>
-<a class="nav-link" data-id="11" href="#education-section-e1d2">Education</a>
-<a class="nav-link" data-id="12" href="#contact-section-z3a4">Contact</a>
-</div>
-<button aria-label="Open menu" class="md:hidden p-2 text-textmut" data-id="13" id="mobile-menu-btn-s7t8">
-<i class="w-6 h-6" data-id="14" data-lucide="menu"></i>
-</button>
-</div>
-</nav>
-<!-- MOBILE MENU -->
-<div class="hidden fixed inset-0 z-[60] flex flex-col" data-id="15" id="mobile-menu-u9v0" style="background: rgba(5,15,10,0.97); backdrop-filter: blur(20px);">
-<div class="flex justify-end p-5" data-id="16">
-<button aria-label="Close menu" class="p-2 text-textmut" data-id="17" id="mobile-menu-close-w1x2">
-<i class="w-6 h-6" data-id="18" data-lucide="x"></i>
-</button>
-</div>
-<div class="flex flex-col items-center gap-6 mt-12" data-id="19">
-<a class="nav-link text-xl mobile-nav-link" data-id="20" href="#hero-section-c1d2">Home</a>
-<a class="nav-link text-xl mobile-nav-link" data-id="21" href="#about-section-a1b2">About</a>
-<a class="nav-link text-xl mobile-nav-link" data-id="22" href="#skills-journey-g5h6">Skills</a>
-<a class="nav-link text-xl mobile-nav-link" data-id="23" href="#projects-section-k9l0">Projects</a>
-<a class="nav-link text-xl mobile-nav-link" data-id="24" href="#experience-section-x1y2">Experience</a>
-<a class="nav-link text-xl mobile-nav-link" data-id="25" href="#education-section-e1d2">Education</a>
-<a class="nav-link text-xl mobile-nav-link" data-id="26" href="#contact-section-z3a4">Contact</a>
-</div>
-</div>
-<main data-id="27">
-<!-- ==================== HERO ==================== -->
-<section class="relative min-h-screen flex items-center justify-center overflow-hidden" data-id="28" id="hero-section-c1d2">
-<canvas data-id="29" id="particle-canvas"></canvas>
-<div class="relative z-10 text-center px-5 max-w-3xl mx-auto" data-id="30">
-<div class="flex flex-wrap justify-center gap-3 mb-6 fade-up" data-id="31" id="hero-badges-e9f0" style="transition-delay: 0.1s;">
-<span class="pill" data-id="32"><i class="w-3.5 h-3.5" data-id="33" data-lucide="code-2"></i> Full-Stack Developer</span>
-<span class="pill" data-id="34"><i class="w-3.5 h-3.5" data-id="35" data-lucide="layers"></i> React + Node.js + PostgreSQL</span>
-<span class="pill" data-id="36"><i class="w-3.5 h-3.5" data-id="37" data-lucide="map-pin"></i> Edmond, OK</span>
-</div>
-<p class="text-textmut text-lg md:text-xl font-light mb-2 fade-up" data-id="38" id="hero-greeting-y3z4" style="transition-delay: 0.25s;">Hey, I'm</p>
-<h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold gradient-text mb-4 fade-up" data-id="39" id="hero-name-a5b6" style="transition-delay: 0.4s;">Charles Wade</h1>
-<p class="text-textmut text-base md:text-lg font-medium mb-10 fade-up" data-id="40" id="hero-subtitle-c7d8" style="transition-delay: 0.55s;">
-<span data-id="41" id="typing-text-r4s5"></span><span class="typing-cursor" data-id="42"></span>
-</p>
-<div class="flex flex-wrap justify-center gap-4 fade-up" data-id="43" id="hero-cta-g1h2" style="transition-delay: 0.7s;">
-<a class="btn-primary" data-id="44" href="#projects-section-k9l0"><i class="w-5 h-5" data-id="45" data-lucide="folder-open"></i> View My Projects</a>
-<a class="btn-outline" data-id="46" href="https://github.com/CharlesW1117" rel="noopener noreferrer" target="_blank"><i class="w-5 h-5" data-id="47" data-lucide="github"></i> GitHub Profile</a>
-</div>
-</div>
-<div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 fade-up" data-id="48" style="transition-delay: 0.9s;">
-<div class="animate-bounce text-textmut opacity-50" data-id="49">
-<i class="w-6 h-6" data-id="50" data-lucide="chevrons-down"></i>
-</div>
-</div>
-</section>
-<!-- ==================== ABOUT ME ==================== -->
-<section data-id="51" id="about-section-a1b2">
-<div class="max-w-5xl mx-auto px-5" data-id="52">
-<div class="text-center mb-16 fade-up" data-id="53">
-<p class="text-primary text-sm font-semibold uppercase tracking-widest mb-3" data-id="54">Who I Am</p>
-<h2 class="text-3xl md:text-4xl font-bold gradient-text" data-id="55" id="about-title-b3c4">About Me</h2>
-</div>
-<div class="flex flex-col md:flex-row gap-8 items-start" data-id="56">
-<div class="flex-1 fade-up" data-id="57" style="transition-delay:0.1s;">
-<p class="text-textmut text-base leading-relaxed" data-id="58" id="about-text-d5e6">Web developer and technical analyst with 2.5 years of experience troubleshooting software issues, supporting users, and building full-stack web applications. I enjoy digging into problems, finding practical fixes, and turning ideas into clean, user-friendly tools. My background combines technical support, process improvement, and hands-on development with JavaScript, React, Node.js, Express, and PostgreSQL.</p>
-</div>
-<div class="flex-1 grid grid-cols-2 gap-4 fade-up" data-id="59" style="transition-delay:0.25s;">
-<div class="glass stat-card" data-id="60">
-<div class="stat-number" data-id="61">2.5</div>
-<p class="text-textmut text-xs mt-1 font-medium" data-id="62">Years Enterprise Experience</p>
-</div>
-<div class="glass stat-card" data-id="63">
-<div class="stat-number" data-id="64">5</div>
-<p class="text-textmut text-xs mt-1 font-medium" data-id="65">Months Full-Stack Training</p>
-</div>
-<div class="glass stat-card" data-id="66">
-<div class="stat-number" data-id="67">2</div>
-<p class="text-textmut text-xs mt-1 font-medium" data-id="68">Projects Shipped</p>
-</div>
-<div class="glass stat-card" data-id="69">
-<div class="stat-number" data-id="70">2×</div>
-<p class="text-textmut text-xs mt-1 font-medium" data-id="71">Tickets Resolved 2× Faster</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- ==================== JOURNEY TIMELINE ==================== -->
-<section class="relative" data-id="72" id="skills-journey-g5h6">
-<div class="max-w-4xl mx-auto px-5" data-id="73">
-<div class="text-center mb-16 fade-up" data-id="74">
-<p class="text-primary text-sm font-semibold uppercase tracking-widest mb-3" data-id="75">Growth Timeline</p>
-<h2 class="text-3xl md:text-4xl font-bold gradient-text" data-id="76" id="journey-title-f7g8">My Dev Journey</h2>
-</div>
-<div class="relative" data-id="77">
-<div class="timeline-line" data-id="78"></div>
-<!-- Feb -->
-<div class="relative pl-16 md:pl-0 mb-12 md:flex md:items-start md:gap-8 slide-left" data-id="79" style="transition-delay:0.1s;">
-<div class="timeline-dot" data-id="80"></div>
-<div class="hidden md:block md:w-1/2 md:text-right md:pr-12" data-id="81">
-<span class="text-sm text-primary font-semibold" data-id="82">Feb 2026</span>
-</div>
-<div class="md:w-1/2 md:pl-12" data-id="83">
-<span class="md:hidden text-sm text-primary font-semibold block mb-2" data-id="84">Feb 2026</span>
-<div class="glass p-5" data-id="85">
-<div class="flex items-center gap-3 mb-2" data-id="86">
-<span class="text-2xl" data-id="87">🌱</span>
-<h3 class="font-semibold text-lg text-textpri" data-id="88">Started Full-Stack Training</h3>
-</div>
-<p class="text-textmut text-sm" data-id="89">HTML/CSS refresh, first Node.js server, JavaScript fundamentals. Built the foundation from the ground up.</p>
-</div>
-</div>
-</div>
-<!-- Mar -->
-<div class="relative pl-16 md:pl-0 mb-12 md:flex md:items-start md:gap-8 slide-right" data-id="90" style="transition-delay:0.2s;">
-<div class="timeline-dot" data-id="91"></div>
-<div class="hidden md:block md:w-1/2 md:text-right md:pr-12" data-id="92">
-<div class="glass p-5 ml-auto" data-id="93" style="max-width:380px;">
-<div class="flex items-center gap-3 mb-2 justify-end" data-id="94">
-<h3 class="font-semibold text-lg text-textpri" data-id="95">React Clicked</h3>
-<span class="text-2xl" data-id="96">⚛️</span>
-</div>
-<p class="text-textmut text-sm text-right" data-id="97">Components, hooks (useState, useEffect), React Router, prop patterns. The component model transformed how I think about UIs.</p>
-</div>
-</div>
-<div class="md:w-1/2 md:pl-12" data-id="98">
-<span class="md:hidden text-sm text-primary font-semibold block mb-2" data-id="99">Mar 2026</span>
-<div class="glass p-5 md:hidden" data-id="100">
-<div class="flex items-center gap-3 mb-2" data-id="101">
-<span class="text-2xl" data-id="102">⚛️</span>
-<h3 class="font-semibold text-lg text-textpri" data-id="103">React Clicked</h3>
-</div>
-<p class="text-textmut text-sm" data-id="104">Components, hooks (useState, useEffect), React Router, prop patterns. The component model transformed how I think about UIs.</p>
-</div>
-<span class="hidden md:block text-sm text-primary font-semibold" data-id="105">Mar 2026</span>
-</div>
-</div>
-<!-- Apr -->
-<div class="relative pl-16 md:pl-0 mb-12 md:flex md:items-start md:gap-8 slide-left" data-id="106" style="transition-delay:0.3s;">
-<div class="timeline-dot" data-id="107"></div>
-<div class="hidden md:block md:w-1/2 md:text-right md:pr-12" data-id="108">
-<span class="text-sm text-primary font-semibold" data-id="109">Apr 2026</span>
-</div>
-<div class="md:w-1/2 md:pl-12" data-id="110">
-<span class="md:hidden text-sm text-primary font-semibold block mb-2" data-id="111">Apr 2026</span>
-<div class="glass p-5" data-id="112">
-<div class="flex items-center gap-3 mb-2" data-id="113">
-<span class="text-2xl" data-id="114">🔗</span>
-<h3 class="font-semibold text-lg text-textpri" data-id="115">Context &amp; State</h3>
-</div>
-<p class="text-textmut text-sm" data-id="116">Context API, global state management, solved complex state-sync issues across components.</p>
-</div>
-</div>
-</div>
-<!-- May -->
-<div class="relative pl-16 md:pl-0 mb-12 md:flex md:items-start md:gap-8 slide-right" data-id="117" style="transition-delay:0.4s;">
-<div class="timeline-dot" data-id="118"></div>
-<div class="hidden md:block md:w-1/2 md:text-right md:pr-12" data-id="119">
-<div class="glass p-5 ml-auto" data-id="120" style="max-width:380px;">
-<div class="flex items-center gap-3 mb-2 justify-end" data-id="121">
-<h3 class="font-semibold text-lg text-textpri" data-id="122">Database Layer</h3>
-<span class="text-2xl" data-id="123">🗄️</span>
-</div>
-<p class="text-textmut text-sm text-right" data-id="124">PostgreSQL, SQL queries, node-postgres (pg), schema design. Data finally lives beyond a restart.</p>
-</div>
-</div>
-<div class="md:w-1/2 md:pl-12" data-id="125">
-<span class="md:hidden text-sm text-primary font-semibold block mb-2" data-id="126">May 2026</span>
-<div class="glass p-5 md:hidden" data-id="127">
-<div class="flex items-center gap-3 mb-2" data-id="128">
-<span class="text-2xl" data-id="129">🗄️</span>
-<h3 class="font-semibold text-lg text-textpri" data-id="130">Database Layer</h3>
-</div>
-<p class="text-textmut text-sm" data-id="131">PostgreSQL, SQL queries, node-postgres (pg), schema design. Data finally lives beyond a restart.</p>
-</div>
-<span class="hidden md:block text-sm text-primary font-semibold" data-id="132">May 2026</span>
-</div>
-</div>
-<!-- Jun -->
-<div class="relative pl-16 md:pl-0 mb-12 md:flex md:items-start md:gap-8 slide-left" data-id="133" style="transition-delay:0.5s;">
-<div class="timeline-dot" data-id="134"></div>
-<div class="hidden md:block md:w-1/2 md:text-right md:pr-12" data-id="135">
-<span class="text-sm text-primary font-semibold" data-id="136">Jun 2026</span>
-</div>
-<div class="md:w-1/2 md:pl-12" data-id="137">
-<span class="md:hidden text-sm text-primary font-semibold block mb-2" data-id="138">Jun 2026</span>
-<div class="glass p-5" data-id="139">
-<div class="flex items-center gap-3 mb-2" data-id="140">
-<span class="text-2xl" data-id="141">🔐</span>
-<h3 class="font-semibold text-lg text-textpri" data-id="142">Auth &amp; Security</h3>
-</div>
-<p class="text-textmut text-sm" data-id="143">JWT authentication, bcrypt, token-based protected routes, REST API design. Learned to guard endpoints securely.</p>
-</div>
-</div>
-</div>
-<!-- Jul -->
-<div class="relative pl-16 md:pl-0 md:flex md:items-start md:gap-8 slide-right" data-id="144" style="transition-delay:0.6s;">
-<div class="timeline-dot" data-id="145"></div>
-<div class="hidden md:block md:w-1/2 md:text-right md:pr-12" data-id="146">
-<div class="glass p-5 ml-auto" data-id="147" style="max-width:380px; border: 1px solid rgba(34,197,94,0.25);">
-<div class="flex items-center gap-3 mb-2 justify-end" data-id="148">
-<h3 class="font-semibold text-lg text-textpri" data-id="149">Deployed &amp; Building</h3>
-<span class="text-2xl" data-id="150">🚀</span>
-</div>
-<p class="text-textmut text-sm text-right" data-id="151">Full-stack apps deployed, team collaboration, API testing. Shipped complete applications end-to-end.</p>
-</div>
-</div>
-<div class="md:w-1/2 md:pl-12" data-id="152">
-<span class="md:hidden text-sm text-primary font-semibold block mb-2" data-id="153">Jul 2026</span>
-<div class="glass p-5 md:hidden" data-id="154" style="border: 1px solid rgba(34,197,94,0.25);">
-<div class="flex items-center gap-3 mb-2" data-id="155">
-<span class="text-2xl" data-id="156">🚀</span>
-<h3 class="font-semibold text-lg text-textpri" data-id="157">Deployed &amp; Building</h3>
-</div>
-<p class="text-textmut text-sm" data-id="158">Full-stack apps deployed, team collaboration, API testing. Shipped complete applications end-to-end.</p>
-</div>
-<span class="hidden md:block text-sm text-primary font-semibold" data-id="159">Jul 2026</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- ==================== TECH STACK ==================== -->
-<section data-id="160" id="stack-section-i7j8">
-<div class="max-w-5xl mx-auto px-5" data-id="161">
-<div class="text-center mb-16 fade-up" data-id="162">
-<p class="text-primary text-sm font-semibold uppercase tracking-widest mb-3" data-id="163">Technologies</p>
-<h2 class="text-3xl md:text-4xl font-bold gradient-text" data-id="164" id="stack-title-h9i0">My Stack</h2>
-</div>
-<!-- Skill Category Cards -->
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-20" data-id="165">
-<!-- Frontend -->
-<div class="skill-category-card glass p-6 fade-up" data-id="166" style="transition-delay:0.1s;">
-<div class="flex items-center gap-3 mb-3" data-id="167">
-<div class="w-11 h-11 rounded-xl flex items-center justify-center text-2xl" data-id="168" style="background:rgba(34,197,94,0.12);">🖥️</div>
-<h3 class="font-bold text-lg text-textpri" data-id="169">Frontend</h3>
-</div>
-<p class="text-textmut text-sm leading-relaxed mb-4" data-id="170">Built responsive React applications using JavaScript, HTML, CSS, React Router, Context API, reusable components, and state management for features like game logic, routing, forms, and user-specific views.</p>
-<div class="flex flex-wrap gap-2" data-id="171">
-<span class="text-xs px-2.5 py-1 rounded-full" data-id="172" style="background:rgba(34,197,94,0.1); color:#4ade80;">React</span>
-<span class="text-xs px-2.5 py-1 rounded-full" data-id="173" style="background:rgba(34,197,94,0.1); color:#4ade80;">JavaScript</span>
-<span class="text-xs px-2.5 py-1 rounded-full" data-id="174" style="background:rgba(34,197,94,0.1); color:#4ade80;">HTML/CSS</span>
-<span class="text-xs px-2.5 py-1 rounded-full" data-id="175" style="background:rgba(34,197,94,0.1); color:#4ade80;">React Router</span>
-<span class="text-xs px-2.5 py-1 rounded-full" data-id="176" style="background:rgba(34,197,94,0.1); color:#4ade80;">Context API</span>
-</div>
-</div>
-<!-- Backend & APIs -->
-<div class="skill-category-card glass p-6 fade-up" data-id="177" style="transition-delay:0.2s;">
-<div class="flex items-center gap-3 mb-3" data-id="178">
-<div class="w-11 h-11 rounded-xl flex items-center justify-center text-2xl" data-id="179" style="background:rgba(34,197,94,0.12);">⚙️</div>
-<h3 class="font-bold text-lg text-textpri" data-id="180">Backend &amp; APIs</h3>
-</div>
-<p class="text-textmut text-sm leading-relaxed mb-4" data-id="181">Worked with Node.js, Express, REST APIs, authentication workflows, server-side routing, and API request handling to support full-stack application features such as activity creation, deletion, and protected user actions.</p>
-<div class="flex flex-wrap gap-2" data-id="182">
-<span class="text-xs px-2.5 py-1 rounded-full" data-id="183" style="background:rgba(34,197,94,0.1); color:#4ade80;">Node.js</span>
-<span class="text-xs px-2.5 py-1 rounded-full" data-id="184" style="background:rgba(34,197,94,0.1); color:#4ade80;">Express</span>
-<span class="text-xs px-2.5 py-1 rounded-full" data-id="185" style="background:rgba(34,197,94,0.1); color:#4ade80;">REST APIs</span>
-<span class="text-xs px-2.5 py-1 rounded-full" data-id="186" style="background:rgba(34,197,94,0.1); color:#4ade80;">Auth Workflows</span>
-</div>
-</div>
-<!-- Databases -->
-<div class="skill-category-card glass p-6 fade-up" data-id="187" style="transition-delay:0.3s;">
-<div class="flex items-center gap-3 mb-3" data-id="188">
-<div class="w-11 h-11 rounded-xl flex items-center justify-center text-2xl" data-id="189" style="background:rgba(34,197,94,0.12);">🗄️</div>
-<h3 class="font-bold text-lg text-textpri" data-id="190">Databases</h3>
-</div>
-<p class="text-textmut text-sm leading-relaxed mb-4" data-id="191">Used SQL and PostgreSQL to work with relational data, troubleshoot database-related issues, understand backend data models, and connect application behavior to stored records.</p>
-<div class="flex flex-wrap gap-2" data-id="192">
-<span class="text-xs px-2.5 py-1 rounded-full" data-id="193" style="background:rgba(34,197,94,0.1); color:#4ade80;">PostgreSQL</span>
-<span class="text-xs px-2.5 py-1 rounded-full" data-id="194" style="background:rgba(34,197,94,0.1); color:#4ade80;">SQL</span>
-<span class="text-xs px-2.5 py-1 rounded-full" data-id="195" style="background:rgba(34,197,94,0.1); color:#4ade80;">Relational Data</span>
-<span class="text-xs px-2.5 py-1 rounded-full" data-id="196" style="background:rgba(34,197,94,0.1); color:#4ade80;">Schema Design</span>
-</div>
-</div>
-<!-- Debugging & Dev Tools -->
-<div class="skill-category-card glass p-6 fade-up" data-id="197" style="transition-delay:0.4s;">
-<div class="flex items-center gap-3 mb-3" data-id="198">
-<div class="w-11 h-11 rounded-xl flex items-center justify-center text-2xl" data-id="199" style="background:rgba(34,197,94,0.12);">🐛</div>
-<h3 class="font-bold text-lg text-textpri" data-id="200">Debugging &amp; Dev Tools</h3>
-</div>
-<p class="text-textmut text-sm leading-relaxed mb-4" data-id="201">Used Git, GitHub, VS Code, Jira, browser developer tools, API testing, and structured troubleshooting to identify bugs, test fixes, manage code changes, and track technical work through resolution.</p>
-<div class="flex flex-wrap gap-2" data-id="202">
-<span class="text-xs px-2.5 py-1 rounded-full" data-id="203" style="background:rgba(34,197,94,0.1); color:#4ade80;">Git</span>
-<span class="text-xs px-2.5 py-1 rounded-full" data-id="204" style="background:rgba(34,197,94,0.1); color:#4ade80;">GitHub</span>
-<span class="text-xs px-2.5 py-1 rounded-full" data-id="205" style="background:rgba(34,197,94,0.1); color:#4ade80;">VS Code</span>
-<span class="text-xs px-2.5 py-1 rounded-full" data-id="206" style="background:rgba(34,197,94,0.1); color:#4ade80;">Jira</span>
-<span class="text-xs px-2.5 py-1 rounded-full" data-id="207" style="background:rgba(34,197,94,0.1); color:#4ade80;">API Testing</span>
-</div>
-</div>
-<!-- Systems & Technical Support -->
-<div class="skill-category-card glass p-6 fade-up" data-id="208" style="transition-delay:0.5s;">
-<div class="flex items-center gap-3 mb-3" data-id="209">
-<div class="w-11 h-11 rounded-xl flex items-center justify-center text-2xl" data-id="210" style="background:rgba(34,197,94,0.12);">🖱️</div>
-<h3 class="font-bold text-lg text-textpri" data-id="211">Systems &amp; Technical Support</h3>
-</div>
-<p class="text-textmut text-sm leading-relaxed mb-4" data-id="212">Supported Windows OS, Active Directory, user account management, software functionality issues, access changes, secure terminations, documentation updates, and escalations to engineering teams.</p>
-<div class="flex flex-wrap gap-2" data-id="213">
-<span class="text-xs px-2.5 py-1 rounded-full" data-id="214" style="background:rgba(34,197,94,0.1); color:#4ade80;">Windows OS</span>
-<span class="text-xs px-2.5 py-1 rounded-full" data-id="215" style="background:rgba(34,197,94,0.1); color:#4ade80;">Active Directory</span>
-<span class="text-xs px-2.5 py-1 rounded-full" data-id="216" style="background:rgba(34,197,94,0.1); color:#4ade80;">User Management</span>
-<span class="text-xs px-2.5 py-1 rounded-full" data-id="217" style="background:rgba(34,197,94,0.1); color:#4ade80;">Documentation</span>
-</div>
-</div>
-<!-- Process & Automation -->
-<div class="skill-category-card glass p-6 fade-up" data-id="218" style="transition-delay:0.6s;">
-<div class="flex items-center gap-3 mb-3" data-id="219">
-<div class="w-11 h-11 rounded-xl flex items-center justify-center text-2xl" data-id="220" style="background:rgba(34,197,94,0.12);">🔄</div>
-<h3 class="font-bold text-lg text-textpri" data-id="221">Process &amp; Automation</h3>
-</div>
-<p class="text-textmut text-sm leading-relaxed mb-4" data-id="222">Improved workflows through technical analysis, documentation, AI-assisted development, automation support, team collaboration, and practical problem-solving across support and development work.</p>
-<div class="flex flex-wrap gap-2" data-id="223">
-<span class="text-xs px-2.5 py-1 rounded-full" data-id="224" style="background:rgba(34,197,94,0.1); color:#4ade80;">Workflow Optimization</span>
-<span class="text-xs px-2.5 py-1 rounded-full" data-id="225" style="background:rgba(34,197,94,0.1); color:#4ade80;">AI-Assisted Dev</span>
-<span class="text-xs px-2.5 py-1 rounded-full" data-id="226" style="background:rgba(34,197,94,0.1); color:#4ade80;">Team Collaboration</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- ==================== PROJECTS ==================== -->
-<section data-id="227" id="projects-section-k9l0">
-<div class="max-w-5xl mx-auto px-5" data-id="228">
-<div class="text-center mb-16 fade-up" data-id="229">
-<p class="text-primary text-sm font-semibold uppercase tracking-widest mb-3" data-id="230">Portfolio</p>
-<h2 class="text-3xl md:text-4xl font-bold gradient-text" data-id="231" id="projects-title-j1k2">What I've Built</h2>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6" data-id="232">
-<!-- Whack-A-Mole -->
-<div class="glass glow-hover flex flex-col fade-up" data-id="233" style="border-left: 4px solid #22c55e; transition-delay:0.1s;">
-<div class="p-6 flex-1" data-id="234">
-<div class="flex items-center gap-3 mb-4" data-id="235">
-<div class="w-10 h-10 rounded-xl flex items-center justify-center" data-id="236" style="background:rgba(34,197,94,0.12);">
-<i class="w-5 h-5" data-id="237" data-lucide="gamepad-2" style="color:#22c55e;"></i>
-</div>
-<h3 class="font-bold text-lg text-textpri" data-id="238">Whack-A-Mole Game</h3>
-</div>
-<p class="text-textmut text-sm mb-5 leading-relaxed" data-id="239">An interactive browser game built with React featuring dynamic rendering, randomized mole movement, score tracking, and restart logic. Solved timing and state-sync issues by restructuring the game loop using controlled intervals and centralized Context API state — preventing race-condition bugs during rapid user interactions.</p>
-<div class="flex flex-wrap gap-2 mb-5" data-id="240">
-<span class="text-xs px-2 py-0.5 rounded-full" data-id="241" style="background:rgba(34,197,94,0.1); color:#4ade80;">React</span>
-<span class="text-xs px-2 py-0.5 rounded-full" data-id="242" style="background:rgba(34,197,94,0.1); color:#4ade80;">Context API</span>
-<span class="text-xs px-2 py-0.5 rounded-full" data-id="243" style="background:rgba(34,197,94,0.1); color:#4ade80;">State Management</span>
-<span class="text-xs px-2 py-0.5 rounded-full" data-id="244" style="background:rgba(34,197,94,0.1); color:#4ade80;">Component Architecture</span>
-</div>
-</div>
-<div class="px-6 pb-6 flex gap-3" data-id="245">
-<a class="btn-outline text-sm py-2 px-4 flex-1 justify-center" data-id="246" href="https://github.com/CharlesW1117/Whack-a-mole" rel="noopener noreferrer" target="_blank"><i class="w-4 h-4" data-id="247" data-lucide="github"></i> GitHub</a>
-<a class="btn-primary text-sm py-2 px-4 flex-1 justify-center" data-id="248" href="https://charlesw1117.github.io/Whack-a-mole/" rel="noopener noreferrer" target="_blank"><i class="w-4 h-4" data-id="249" data-lucide="external-link"></i> Live Demo</a>
-</div>
-</div>
-<!-- Fitness Tracker Pro -->
-<div class="glass glow-hover flex flex-col fade-up" data-id="250" style="border-left: 4px solid #4ade80; transition-delay:0.25s;">
-<div class="p-6 flex-1" data-id="251">
-<div class="flex items-center gap-3 mb-4" data-id="252">
-<div class="w-10 h-10 rounded-xl flex items-center justify-center" data-id="253" style="background:rgba(74,222,128,0.12);">
-<i class="w-5 h-5" data-id="254" data-lucide="activity" style="color:#4ade80;"></i>
-</div>
-<h3 class="font-bold text-lg text-textpri" data-id="255">Fitness Tracker Pro</h3>
-<span class="text-xs px-2.5 py-0.5 rounded-full font-semibold" data-id="256" style="background:rgba(34,197,94,0.15); color:#4ade80; border: 1px solid rgba(34,197,94,0.3);">In Progress</span>
-</div>
-<p class="text-textmut text-sm mb-5 leading-relaxed" data-id="257">A collaborative full-stack fitness application with page routing, global state management, and REST API communication. Implemented activity creation, deletion, and JWT authentication workflows. Built reusable components, handled token-based auth, and ensured secure user-specific actions such as authorized activity deletion.</p>
-<div class="flex flex-wrap gap-2 mb-5" data-id="258">
-<span class="text-xs px-2 py-0.5 rounded-full" data-id="259" style="background:rgba(74,222,128,0.1); color:#4ade80;">React</span>
-<span class="text-xs px-2 py-0.5 rounded-full" data-id="260" style="background:rgba(74,222,128,0.1); color:#4ade80;">Node.js</span>
-<span class="text-xs px-2 py-0.5 rounded-full" data-id="261" style="background:rgba(74,222,128,0.1); color:#4ade80;">Express</span>
-<span class="text-xs px-2 py-0.5 rounded-full" data-id="262" style="background:rgba(74,222,128,0.1); color:#4ade80;">PostgreSQL</span>
-<span class="text-xs px-2 py-0.5 rounded-full" data-id="263" style="background:rgba(74,222,128,0.1); color:#4ade80;">REST APIs</span>
-<span class="text-xs px-2 py-0.5 rounded-full" data-id="264" style="background:rgba(74,222,128,0.1); color:#4ade80;">Context API</span>
-<span class="text-xs px-2 py-0.5 rounded-full" data-id="265" style="background:rgba(74,222,128,0.1); color:#4ade80;">JWT</span>
-</div>
-</div>
-<div class="px-6 pb-6 flex gap-3" data-id="266">
-<a class="btn-outline text-sm py-2 px-4 flex-1 justify-center" data-id="267" href="https://github.com/CharlesW1117/Fitness-Trackr-Pro-PT-1-" rel="noopener noreferrer" target="_blank"><i class="w-4 h-4" data-id="268" data-lucide="github"></i> GitHub</a>
-<a class="btn-primary text-sm py-2 px-4 flex-1 justify-center" data-id="269" href="https://charlesw1117.github.io/Fitness-Trackr-Pro-PT-1-/" rel="noopener noreferrer" target="_blank"><i class="w-4 h-4" data-id="270" data-lucide="external-link"></i> Live Demo</a>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- ==================== ARCHITECTURE ==================== -->
-<section data-id="271" id="architecture-section-m1n2">
-<div class="max-w-5xl mx-auto px-5" data-id="272">
-<div class="text-center mb-16 fade-up" data-id="273">
-<p class="text-primary text-sm font-semibold uppercase tracking-widest mb-3" data-id="274">System Design</p>
-<h2 class="text-3xl md:text-4xl font-bold gradient-text" data-id="275" id="arch-title-l3m4">How It All Connects</h2>
-</div>
-<div class="fade-up flex flex-col md:flex-row items-center justify-center gap-4 md:gap-0" data-id="276">
-<div class="arch-box relative glass p-6 md:p-8 text-center flex-1 max-w-xs cursor-default" data-id="277" style="border: 1px solid rgba(34,197,94,0.25);">
-<div class="tooltip-box" data-id="278">Renders UI, manages state with hooks &amp; Context API, calls REST endpoints</div>
-<div class="w-12 h-12 rounded-xl mx-auto mb-3 flex items-center justify-center text-2xl" data-id="279" style="background:rgba(34,197,94,0.15);">
-<i class="w-6 h-6" data-id="280" data-lucide="monitor" style="color:#22c55e;"></i>
-</div>
-<h3 class="font-bold text-textpri mb-1" data-id="281">React Frontend</h3>
-<p class="text-xs text-textmut" data-id="282">UI Components · State · Hooks</p>
-</div>
-<div class="arch-arrow flex-shrink-0 flex flex-col md:flex-row items-center gap-1 py-2 md:py-0 md:px-3" data-id="283">
-<span class="hidden md:block" data-id="284">───</span>
-<span class="text-xs font-mono opacity-80" data-id="285">HTTP / JSON</span>
-<span class="hidden md:block" data-id="286">──▸</span>
-<span class="md:hidden text-lg" data-id="287">▾</span>
-</div>
-<div class="arch-box relative glass p-6 md:p-8 text-center flex-1 max-w-xs cursor-default" data-id="288" style="border: 1px solid rgba(34,197,94,0.2);">
-<div class="tooltip-box" data-id="289">Handles routing, validates requests, applies middleware, returns JSON</div>
-<div class="w-12 h-12 rounded-xl mx-auto mb-3 flex items-center justify-center text-2xl" data-id="290" style="background:rgba(34,197,94,0.15);">
-<i class="w-6 h-6" data-id="291" data-lucide="server" style="color:#4ade80;"></i>
-</div>
-<h3 class="font-bold text-textpri mb-1" data-id="292">Express API Server</h3>
-<p class="text-xs text-textmut" data-id="293">Routes · Middleware · Auth</p>
-</div>
-<div class="arch-arrow flex-shrink-0 flex flex-col md:flex-row items-center gap-1 py-2 md:py-0 md:px-3" data-id="294">
-<span class="hidden md:block" data-id="295">───</span>
-<span class="text-xs font-mono opacity-80" data-id="296">SQL Queries</span>
-<span class="hidden md:block" data-id="297">──▸</span>
-<span class="md:hidden text-lg" data-id="298">▾</span>
-</div>
-<div class="arch-box relative glass p-6 md:p-8 text-center flex-1 max-w-xs cursor-default" data-id="299" style="border: 1px solid rgba(34,197,94,0.15);">
-<div class="tooltip-box" data-id="300">Stores relational data, handles joins, enforces schema integrity</div>
-<div class="w-12 h-12 rounded-xl mx-auto mb-3 flex items-center justify-center text-2xl" data-id="301" style="background:rgba(34,197,94,0.15);">
-<i class="w-6 h-6" data-id="302" data-lucide="database" style="color:#22c55e;"></i>
-</div>
-<h3 class="font-bold text-textpri mb-1" data-id="303">PostgreSQL DB</h3>
-<p class="text-xs text-textmut" data-id="304">Tables · Relations · Indexes</p>
-</div>
-</div>
-</div>
-</section>
-<!-- ==================== SKILL BARS ==================== -->
-<section data-id="305" id="skillbars-section-o3p4">
-<div class="max-w-3xl mx-auto px-5" data-id="306">
-<div class="text-center mb-16 fade-up" data-id="307">
-<p class="text-primary text-sm font-semibold uppercase tracking-widest mb-3" data-id="308">Proficiency</p>
-<h2 class="text-3xl md:text-4xl font-bold gradient-text" data-id="309" id="skillbars-title-n5o6">Proficiency Levels</h2>
-</div>
-<div class="space-y-5" data-id="310" id="skill-bars-container-p7q8">
-<div class="skill-item fade-up" data-id="311" data-percent="85" style="transition-delay:0.05s;">
-<div class="flex justify-between mb-2" data-id="312">
-<span class="text-sm font-medium text-textpri" data-id="313">JavaScript ES6+</span>
-<span class="text-sm font-semibold text-primary tabular-nums" data-id="314">85%</span>
-</div>
-<div class="w-full h-2.5 rounded-full" data-id="315" style="background:rgba(255,255,255,0.06);">
-<div class="skill-bar-fill" data-id="316"></div>
-</div>
-</div>
-<div class="skill-item fade-up" data-id="317" data-percent="82" style="transition-delay:0.1s;">
-<div class="flex justify-between mb-2" data-id="318">
-<span class="text-sm font-medium text-textpri" data-id="319">React &amp; JSX</span>
-<span class="text-sm font-semibold text-primary tabular-nums" data-id="320">82%</span>
-</div>
-<div class="w-full h-2.5 rounded-full" data-id="321" style="background:rgba(255,255,255,0.06);">
-<div class="skill-bar-fill" data-id="322"></div>
-</div>
-</div>
-<div class="skill-item fade-up" data-id="323" data-percent="80" style="transition-delay:0.15s;">
-<div class="flex justify-between mb-2" data-id="324">
-<span class="text-sm font-medium text-textpri" data-id="325">Context API &amp; State</span>
-<span class="text-sm font-semibold text-primary tabular-nums" data-id="326">80%</span>
-</div>
-<div class="w-full h-2.5 rounded-full" data-id="327" style="background:rgba(255,255,255,0.06);">
-<div class="skill-bar-fill" data-id="328"></div>
-</div>
-</div>
-<div class="skill-item fade-up" data-id="329" data-percent="78" style="transition-delay:0.2s;">
-<div class="flex justify-between mb-2" data-id="330">
-<span class="text-sm font-medium text-textpri" data-id="331">Express REST APIs</span>
-<span class="text-sm font-semibold text-primary tabular-nums" data-id="332">78%</span>
-</div>
-<div class="w-full h-2.5 rounded-full" data-id="333" style="background:rgba(255,255,255,0.06);">
-<div class="skill-bar-fill" data-id="334"></div>
-</div>
-</div>
-<div class="skill-item fade-up" data-id="335" data-percent="76" style="transition-delay:0.25s;">
-<div class="flex justify-between mb-2" data-id="336">
-<span class="text-sm font-medium text-textpri" data-id="337">Git &amp; GitHub</span>
-<span class="text-sm font-semibold text-primary tabular-nums" data-id="338">76%</span>
-</div>
-<div class="w-full h-2.5 rounded-full" data-id="339" style="background:rgba(255,255,255,0.06);">
-<div class="skill-bar-fill" data-id="340"></div>
-</div>
-</div>
-<div class="skill-item fade-up" data-id="341" data-percent="74" style="transition-delay:0.3s;">
-<div class="flex justify-between mb-2" data-id="342">
-<span class="text-sm font-medium text-textpri" data-id="343">PostgreSQL &amp; SQL</span>
-<span class="text-sm font-semibold text-primary tabular-nums" data-id="344">74%</span>
-</div>
-<div class="w-full h-2.5 rounded-full" data-id="345" style="background:rgba(255,255,255,0.06);">
-<div class="skill-bar-fill" data-id="346"></div>
-</div>
-</div>
-<div class="skill-item fade-up" data-id="347" data-percent="73" style="transition-delay:0.35s;">
-<div class="flex justify-between mb-2" data-id="348">
-<span class="text-sm font-medium text-textpri" data-id="349">Jira &amp; Dev Workflows</span>
-<span class="text-sm font-semibold text-primary tabular-nums" data-id="350">73%</span>
-</div>
-<div class="w-full h-2.5 rounded-full" data-id="351" style="background:rgba(255,255,255,0.06);">
-<div class="skill-bar-fill" data-id="352"></div>
-</div>
-</div>
-<div class="skill-item fade-up" data-id="353" data-percent="70" style="transition-delay:0.4s;">
-<div class="flex justify-between mb-2" data-id="354">
-<span class="text-sm font-medium text-textpri" data-id="355">JWT Authentication</span>
-<span class="text-sm font-semibold text-primary tabular-nums" data-id="356">70%</span>
-</div>
-<div class="w-full h-2.5 rounded-full" data-id="357" style="background:rgba(255,255,255,0.06);">
-<div class="skill-bar-fill" data-id="358"></div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- ==================== CODE SHOWCASE ==================== -->
-<section data-id="359" id="code-section-q5r6">
-<div class="max-w-3xl mx-auto px-5" data-id="360">
-<div class="text-center mb-16 fade-up" data-id="361">
-<p class="text-primary text-sm font-semibold uppercase tracking-widest mb-3" data-id="362">Code Samples</p>
-<h2 class="text-3xl md:text-4xl font-bold gradient-text" data-id="363" id="code-title-r7s8">A Peek at My Code</h2>
-</div>
-<div class="fade-up" data-id="364">
-<div class="flex gap-1 border-b border-white/5 mb-0" data-id="365">
-<button class="code-tab active" data-code-tab="react" data-id="366">
-<i class="w-3.5 h-3.5 inline mr-1.5" data-id="367" data-lucide="atom" style="vertical-align: -2px;"></i>React Component
-            </button>
-<button class="code-tab" data-code-tab="express" data-id="368">
-<i class="w-3.5 h-3.5 inline mr-1.5" data-id="369" data-lucide="server" style="vertical-align: -2px;"></i>Express Route
-            </button>
-<button class="code-tab" data-code-tab="sql" data-id="370">
-<i class="w-3.5 h-3.5 inline mr-1.5" data-id="371" data-lucide="database" style="vertical-align: -2px;"></i>SQL Schema
-            </button>
-</div>
-<div class="rounded-b-2xl overflow-hidden" data-id="372" style="background: var(--codebg); border: 1px solid var(--glass-border); border-top: none;">
-<div class="code-panel active p-5 md:p-6 overflow-x-auto" data-id="373" id="code-panel-react-t9u0">
-<pre class="text-sm leading-relaxed font-mono" data-id="374"><code data-id="375"><span class="syn-kw" data-id="376">const</span> <span class="syn-fn" data-id="377">MoleHole</span> = ({ <span class="syn-var" data-id="378">isActive</span>, <span class="syn-var" data-id="379">position</span>, <span class="syn-var" data-id="380">onWhack</span> }) =&gt; {
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body data-id="0">
+    <app-icon
+      data-icon="code-2"
+      data-id="1"
+      data-palette="Green"
+      hidden=""
+    ></app-icon>
+    <!-- NAVIGATION -->
+    <nav
+      class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
+      data-id="2"
+      id="main-nav-w4d2"
+      style="background: transparent"
+    >
+      <div
+        class="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between"
+        data-id="3"
+      >
+        <a
+          class="text-lg font-bold gradient-text tracking-tight"
+          data-id="4"
+          href="#hero-section-c1d2"
+          >Charles Wade</a
+        >
+        <div
+          class="hidden md:flex items-center gap-6"
+          data-id="5"
+          id="desktop-nav-e3f4"
+        >
+          <a class="nav-link active-link" data-id="6" href="#hero-section-c1d2"
+            >Home</a
+          >
+          <a class="nav-link" data-id="7" href="#about-section-a1b2">About</a>
+          <a class="nav-link" data-id="8" href="#skills-journey-g5h6">Skills</a>
+          <a class="nav-link" data-id="9" href="#projects-section-k9l0"
+            >Projects</a
+          >
+          <a class="nav-link" data-id="10" href="#experience-section-x1y2"
+            >Experience</a
+          >
+          <a class="nav-link" data-id="11" href="#education-section-e1d2"
+            >Education</a
+          >
+          <a class="nav-link" data-id="12" href="#contact-section-z3a4"
+            >Contact</a
+          >
+        </div>
+        <button
+          aria-label="Open menu"
+          class="md:hidden p-2 text-textmut"
+          data-id="13"
+          id="mobile-menu-btn-s7t8"
+        >
+          <i class="w-6 h-6" data-id="14" data-lucide="menu"></i>
+        </button>
+      </div>
+    </nav>
+    <!-- MOBILE MENU -->
+    <div
+      class="hidden fixed inset-0 z-[60] flex flex-col"
+      data-id="15"
+      id="mobile-menu-u9v0"
+      style="background: rgba(5, 15, 10, 0.97); backdrop-filter: blur(20px)"
+    >
+      <div class="flex justify-end p-5" data-id="16">
+        <button
+          aria-label="Close menu"
+          class="p-2 text-textmut"
+          data-id="17"
+          id="mobile-menu-close-w1x2"
+        >
+          <i class="w-6 h-6" data-id="18" data-lucide="x"></i>
+        </button>
+      </div>
+      <div class="flex flex-col items-center gap-6 mt-12" data-id="19">
+        <a
+          class="nav-link text-xl mobile-nav-link"
+          data-id="20"
+          href="#hero-section-c1d2"
+          >Home</a
+        >
+        <a
+          class="nav-link text-xl mobile-nav-link"
+          data-id="21"
+          href="#about-section-a1b2"
+          >About</a
+        >
+        <a
+          class="nav-link text-xl mobile-nav-link"
+          data-id="22"
+          href="#skills-journey-g5h6"
+          >Skills</a
+        >
+        <a
+          class="nav-link text-xl mobile-nav-link"
+          data-id="23"
+          href="#projects-section-k9l0"
+          >Projects</a
+        >
+        <a
+          class="nav-link text-xl mobile-nav-link"
+          data-id="24"
+          href="#experience-section-x1y2"
+          >Experience</a
+        >
+        <a
+          class="nav-link text-xl mobile-nav-link"
+          data-id="25"
+          href="#education-section-e1d2"
+          >Education</a
+        >
+        <a
+          class="nav-link text-xl mobile-nav-link"
+          data-id="26"
+          href="#contact-section-z3a4"
+          >Contact</a
+        >
+      </div>
+    </div>
+    <main data-id="27">
+      <!-- ==================== HERO ==================== -->
+      <section
+        class="relative min-h-screen flex items-center justify-center overflow-hidden"
+        data-id="28"
+        id="hero-section-c1d2"
+      >
+        <canvas data-id="29" id="particle-canvas"></canvas>
+        <div
+          class="relative z-10 text-center px-5 max-w-3xl mx-auto"
+          data-id="30"
+        >
+          <div
+            class="flex flex-wrap justify-center gap-3 mb-6 fade-up"
+            data-id="31"
+            id="hero-badges-e9f0"
+            style="transition-delay: 0.1s"
+          >
+            <span class="pill" data-id="32"
+              ><i class="w-3.5 h-3.5" data-id="33" data-lucide="code-2"></i>
+              Full-Stack Developer</span
+            >
+            <span class="pill" data-id="34"
+              ><i class="w-3.5 h-3.5" data-id="35" data-lucide="layers"></i>
+              React + Node.js + PostgreSQL</span
+            >
+            <span class="pill" data-id="36"
+              ><i class="w-3.5 h-3.5" data-id="37" data-lucide="map-pin"></i>
+              Edmond, OK</span
+            >
+          </div>
+          <p
+            class="text-textmut text-lg md:text-xl font-light mb-2 fade-up"
+            data-id="38"
+            id="hero-greeting-y3z4"
+            style="transition-delay: 0.25s"
+          >
+            Hey, I'm
+          </p>
+          <h1
+            class="text-5xl md:text-7xl lg:text-8xl font-extrabold gradient-text mb-4 fade-up"
+            data-id="39"
+            id="hero-name-a5b6"
+            style="transition-delay: 0.4s"
+          >
+            Charles Wade
+          </h1>
+          <p
+            class="text-textmut text-base md:text-lg font-medium mb-10 fade-up"
+            data-id="40"
+            id="hero-subtitle-c7d8"
+            style="transition-delay: 0.55s"
+          >
+            <span data-id="41" id="typing-text-r4s5"></span
+            ><span class="typing-cursor" data-id="42"></span>
+          </p>
+          <div
+            class="flex flex-wrap justify-center gap-4 fade-up"
+            data-id="43"
+            id="hero-cta-g1h2"
+            style="transition-delay: 0.7s"
+          >
+            <a class="btn-primary" data-id="44" href="#projects-section-k9l0"
+              ><i class="w-5 h-5" data-id="45" data-lucide="folder-open"></i>
+              View My Projects</a
+            >
+            <a
+              class="btn-outline"
+              data-id="46"
+              href="https://github.com/CharlesW1117"
+              rel="noopener noreferrer"
+              target="_blank"
+              ><i class="w-5 h-5" data-id="47" data-lucide="github"></i> GitHub
+              Profile</a
+            >
+          </div>
+        </div>
+        <div
+          class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 fade-up"
+          data-id="48"
+          style="transition-delay: 0.9s"
+        >
+          <div class="animate-bounce text-textmut opacity-50" data-id="49">
+            <i class="w-6 h-6" data-id="50" data-lucide="chevrons-down"></i>
+          </div>
+        </div>
+      </section>
+      <!-- ==================== ABOUT ME ==================== -->
+      <section data-id="51" id="about-section-a1b2">
+        <div class="max-w-5xl mx-auto px-5" data-id="52">
+          <div class="text-center mb-16 fade-up" data-id="53">
+            <p
+              class="text-primary text-sm font-semibold uppercase tracking-widest mb-3"
+              data-id="54"
+            >
+              Who I Am
+            </p>
+            <h2
+              class="text-3xl md:text-4xl font-bold gradient-text"
+              data-id="55"
+              id="about-title-b3c4"
+            >
+              About Me
+            </h2>
+          </div>
+          <div class="flex flex-col md:flex-row gap-8 items-start" data-id="56">
+            <div
+              class="flex-1 fade-up"
+              data-id="57"
+              style="transition-delay: 0.1s"
+            >
+              <p
+                class="text-textmut text-base leading-relaxed"
+                data-id="58"
+                id="about-text-d5e6"
+              >
+                Web developer and technical analyst with 2.5 years of experience
+                troubleshooting software issues, supporting users, and building
+                full-stack web applications. I enjoy digging into problems,
+                finding practical fixes, and turning ideas into clean,
+                user-friendly tools. My background combines technical support,
+                process improvement, and hands-on development with JavaScript,
+                React, Node.js, Express, and PostgreSQL.
+              </p>
+            </div>
+            <div
+              class="flex-1 grid grid-cols-2 gap-4 fade-up"
+              data-id="59"
+              style="transition-delay: 0.25s"
+            >
+              <div class="glass stat-card" data-id="60">
+                <div class="stat-number" data-id="61">2.5</div>
+                <p class="text-textmut text-xs mt-1 font-medium" data-id="62">
+                  Years Enterprise Experience
+                </p>
+              </div>
+              <div class="glass stat-card" data-id="63">
+                <div class="stat-number" data-id="64">5</div>
+                <p class="text-textmut text-xs mt-1 font-medium" data-id="65">
+                  Months Full-Stack Training
+                </p>
+              </div>
+              <div class="glass stat-card" data-id="66">
+                <div class="stat-number" data-id="67">2</div>
+                <p class="text-textmut text-xs mt-1 font-medium" data-id="68">
+                  Projects Shipped
+                </p>
+              </div>
+              <div class="glass stat-card" data-id="69">
+                <div class="stat-number" data-id="70">2×</div>
+                <p class="text-textmut text-xs mt-1 font-medium" data-id="71">
+                  Tickets Resolved 2× Faster
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ==================== JOURNEY TIMELINE ==================== -->
+      <section class="relative" data-id="72" id="skills-journey-g5h6">
+        <div class="max-w-4xl mx-auto px-5" data-id="73">
+          <div class="text-center mb-16 fade-up" data-id="74">
+            <p
+              class="text-primary text-sm font-semibold uppercase tracking-widest mb-3"
+              data-id="75"
+            >
+              Growth Timeline
+            </p>
+            <h2
+              class="text-3xl md:text-4xl font-bold gradient-text"
+              data-id="76"
+              id="journey-title-f7g8"
+            >
+              My Dev Journey
+            </h2>
+          </div>
+          <div class="relative" data-id="77">
+            <div class="timeline-line" data-id="78"></div>
+            <!-- Feb -->
+            <div
+              class="relative pl-16 md:pl-0 mb-12 md:flex md:items-start md:gap-8 slide-left"
+              data-id="79"
+              style="transition-delay: 0.1s"
+            >
+              <div class="timeline-dot" data-id="80"></div>
+              <div
+                class="hidden md:block md:w-1/2 md:text-right md:pr-12"
+                data-id="81"
+              >
+                <span class="text-sm text-primary font-semibold" data-id="82"
+                  >Feb 2026</span
+                >
+              </div>
+              <div class="md:w-1/2 md:pl-12" data-id="83">
+                <span
+                  class="md:hidden text-sm text-primary font-semibold block mb-2"
+                  data-id="84"
+                  >Feb 2026</span
+                >
+                <div class="glass p-5" data-id="85">
+                  <div class="flex items-center gap-3 mb-2" data-id="86">
+                    <span class="text-2xl" data-id="87">🌱</span>
+                    <h3 class="font-semibold text-lg text-textpri" data-id="88">
+                      Started Full-Stack Training
+                    </h3>
+                  </div>
+                  <p class="text-textmut text-sm" data-id="89">
+                    HTML/CSS refresh, first Node.js server, JavaScript
+                    fundamentals. Built the foundation from the ground up.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Mar -->
+            <div
+              class="relative pl-16 md:pl-0 mb-12 md:flex md:items-start md:gap-8 slide-right"
+              data-id="90"
+              style="transition-delay: 0.2s"
+            >
+              <div class="timeline-dot" data-id="91"></div>
+              <div
+                class="hidden md:block md:w-1/2 md:text-right md:pr-12"
+                data-id="92"
+              >
+                <div
+                  class="glass p-5 ml-auto"
+                  data-id="93"
+                  style="max-width: 380px"
+                >
+                  <div
+                    class="flex items-center gap-3 mb-2 justify-end"
+                    data-id="94"
+                  >
+                    <h3 class="font-semibold text-lg text-textpri" data-id="95">
+                      React Clicked
+                    </h3>
+                    <span class="text-2xl" data-id="96">⚛️</span>
+                  </div>
+                  <p class="text-textmut text-sm text-right" data-id="97">
+                    Components, hooks (useState, useEffect), React Router, prop
+                    patterns. The component model transformed how I think about
+                    UIs.
+                  </p>
+                </div>
+              </div>
+              <div class="md:w-1/2 md:pl-12" data-id="98">
+                <span
+                  class="md:hidden text-sm text-primary font-semibold block mb-2"
+                  data-id="99"
+                  >Mar 2026</span
+                >
+                <div class="glass p-5 md:hidden" data-id="100">
+                  <div class="flex items-center gap-3 mb-2" data-id="101">
+                    <span class="text-2xl" data-id="102">⚛️</span>
+                    <h3
+                      class="font-semibold text-lg text-textpri"
+                      data-id="103"
+                    >
+                      React Clicked
+                    </h3>
+                  </div>
+                  <p class="text-textmut text-sm" data-id="104">
+                    Components, hooks (useState, useEffect), React Router, prop
+                    patterns. The component model transformed how I think about
+                    UIs.
+                  </p>
+                </div>
+                <span
+                  class="hidden md:block text-sm text-primary font-semibold"
+                  data-id="105"
+                  >Mar 2026</span
+                >
+              </div>
+            </div>
+            <!-- Apr -->
+            <div
+              class="relative pl-16 md:pl-0 mb-12 md:flex md:items-start md:gap-8 slide-left"
+              data-id="106"
+              style="transition-delay: 0.3s"
+            >
+              <div class="timeline-dot" data-id="107"></div>
+              <div
+                class="hidden md:block md:w-1/2 md:text-right md:pr-12"
+                data-id="108"
+              >
+                <span class="text-sm text-primary font-semibold" data-id="109"
+                  >Apr 2026</span
+                >
+              </div>
+              <div class="md:w-1/2 md:pl-12" data-id="110">
+                <span
+                  class="md:hidden text-sm text-primary font-semibold block mb-2"
+                  data-id="111"
+                  >Apr 2026</span
+                >
+                <div class="glass p-5" data-id="112">
+                  <div class="flex items-center gap-3 mb-2" data-id="113">
+                    <span class="text-2xl" data-id="114">🔗</span>
+                    <h3
+                      class="font-semibold text-lg text-textpri"
+                      data-id="115"
+                    >
+                      Context &amp; State
+                    </h3>
+                  </div>
+                  <p class="text-textmut text-sm" data-id="116">
+                    Context API, global state management, solved complex
+                    state-sync issues across components.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- May -->
+            <div
+              class="relative pl-16 md:pl-0 mb-12 md:flex md:items-start md:gap-8 slide-right"
+              data-id="117"
+              style="transition-delay: 0.4s"
+            >
+              <div class="timeline-dot" data-id="118"></div>
+              <div
+                class="hidden md:block md:w-1/2 md:text-right md:pr-12"
+                data-id="119"
+              >
+                <div
+                  class="glass p-5 ml-auto"
+                  data-id="120"
+                  style="max-width: 380px"
+                >
+                  <div
+                    class="flex items-center gap-3 mb-2 justify-end"
+                    data-id="121"
+                  >
+                    <h3
+                      class="font-semibold text-lg text-textpri"
+                      data-id="122"
+                    >
+                      Database Layer
+                    </h3>
+                    <span class="text-2xl" data-id="123">🗄️</span>
+                  </div>
+                  <p class="text-textmut text-sm text-right" data-id="124">
+                    PostgreSQL, SQL queries, node-postgres (pg), schema design.
+                    Data finally lives beyond a restart.
+                  </p>
+                </div>
+              </div>
+              <div class="md:w-1/2 md:pl-12" data-id="125">
+                <span
+                  class="md:hidden text-sm text-primary font-semibold block mb-2"
+                  data-id="126"
+                  >May 2026</span
+                >
+                <div class="glass p-5 md:hidden" data-id="127">
+                  <div class="flex items-center gap-3 mb-2" data-id="128">
+                    <span class="text-2xl" data-id="129">🗄️</span>
+                    <h3
+                      class="font-semibold text-lg text-textpri"
+                      data-id="130"
+                    >
+                      Database Layer
+                    </h3>
+                  </div>
+                  <p class="text-textmut text-sm" data-id="131">
+                    PostgreSQL, SQL queries, node-postgres (pg), schema design.
+                    Data finally lives beyond a restart.
+                  </p>
+                </div>
+                <span
+                  class="hidden md:block text-sm text-primary font-semibold"
+                  data-id="132"
+                  >May 2026</span
+                >
+              </div>
+            </div>
+            <!-- Jun -->
+            <div
+              class="relative pl-16 md:pl-0 mb-12 md:flex md:items-start md:gap-8 slide-left"
+              data-id="133"
+              style="transition-delay: 0.5s"
+            >
+              <div class="timeline-dot" data-id="134"></div>
+              <div
+                class="hidden md:block md:w-1/2 md:text-right md:pr-12"
+                data-id="135"
+              >
+                <span class="text-sm text-primary font-semibold" data-id="136"
+                  >Jun 2026</span
+                >
+              </div>
+              <div class="md:w-1/2 md:pl-12" data-id="137">
+                <span
+                  class="md:hidden text-sm text-primary font-semibold block mb-2"
+                  data-id="138"
+                  >Jun 2026</span
+                >
+                <div class="glass p-5" data-id="139">
+                  <div class="flex items-center gap-3 mb-2" data-id="140">
+                    <span class="text-2xl" data-id="141">🔐</span>
+                    <h3
+                      class="font-semibold text-lg text-textpri"
+                      data-id="142"
+                    >
+                      Auth &amp; Security
+                    </h3>
+                  </div>
+                  <p class="text-textmut text-sm" data-id="143">
+                    JWT authentication, bcrypt, token-based protected routes,
+                    REST API design. Learned to guard endpoints securely.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Jul -->
+            <div
+              class="relative pl-16 md:pl-0 md:flex md:items-start md:gap-8 slide-right"
+              data-id="144"
+              style="transition-delay: 0.6s"
+            >
+              <div class="timeline-dot" data-id="145"></div>
+              <div
+                class="hidden md:block md:w-1/2 md:text-right md:pr-12"
+                data-id="146"
+              >
+                <div
+                  class="glass p-5 ml-auto"
+                  data-id="147"
+                  style="
+                    max-width: 380px;
+                    border: 1px solid rgba(34, 197, 94, 0.25);
+                  "
+                >
+                  <div
+                    class="flex items-center gap-3 mb-2 justify-end"
+                    data-id="148"
+                  >
+                    <h3
+                      class="font-semibold text-lg text-textpri"
+                      data-id="149"
+                    >
+                      Deployed &amp; Building
+                    </h3>
+                    <span class="text-2xl" data-id="150">🚀</span>
+                  </div>
+                  <p class="text-textmut text-sm text-right" data-id="151">
+                    Full-stack apps deployed, team collaboration, API testing.
+                    Shipped complete applications end-to-end.
+                  </p>
+                </div>
+              </div>
+              <div class="md:w-1/2 md:pl-12" data-id="152">
+                <span
+                  class="md:hidden text-sm text-primary font-semibold block mb-2"
+                  data-id="153"
+                  >Jul 2026</span
+                >
+                <div
+                  class="glass p-5 md:hidden"
+                  data-id="154"
+                  style="border: 1px solid rgba(34, 197, 94, 0.25)"
+                >
+                  <div class="flex items-center gap-3 mb-2" data-id="155">
+                    <span class="text-2xl" data-id="156">🚀</span>
+                    <h3
+                      class="font-semibold text-lg text-textpri"
+                      data-id="157"
+                    >
+                      Deployed &amp; Building
+                    </h3>
+                  </div>
+                  <p class="text-textmut text-sm" data-id="158">
+                    Full-stack apps deployed, team collaboration, API testing.
+                    Shipped complete applications end-to-end.
+                  </p>
+                </div>
+                <span
+                  class="hidden md:block text-sm text-primary font-semibold"
+                  data-id="159"
+                  >Jul 2026</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ==================== TECH STACK ==================== -->
+      <section data-id="160" id="stack-section-i7j8">
+        <div class="max-w-5xl mx-auto px-5" data-id="161">
+          <div class="text-center mb-16 fade-up" data-id="162">
+            <p
+              class="text-primary text-sm font-semibold uppercase tracking-widest mb-3"
+              data-id="163"
+            >
+              Technologies
+            </p>
+            <h2
+              class="text-3xl md:text-4xl font-bold gradient-text"
+              data-id="164"
+              id="stack-title-h9i0"
+            >
+              My Stack
+            </h2>
+          </div>
+          <!-- Skill Category Cards -->
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-20"
+            data-id="165"
+          >
+            <!-- Frontend -->
+            <div
+              class="skill-category-card glass p-6 fade-up"
+              data-id="166"
+              style="transition-delay: 0.1s"
+            >
+              <div class="flex items-center gap-3 mb-3" data-id="167">
+                <div
+                  class="w-11 h-11 rounded-xl flex items-center justify-center text-2xl"
+                  data-id="168"
+                  style="background: rgba(34, 197, 94, 0.12)"
+                >
+                  🖥️
+                </div>
+                <h3 class="font-bold text-lg text-textpri" data-id="169">
+                  Frontend
+                </h3>
+              </div>
+              <p
+                class="text-textmut text-sm leading-relaxed mb-4"
+                data-id="170"
+              >
+                Built responsive React applications using JavaScript, HTML, CSS,
+                React Router, Context API, reusable components, and state
+                management for features like game logic, routing, forms, and
+                user-specific views.
+              </p>
+              <div class="flex flex-wrap gap-2" data-id="171">
+                <span
+                  class="text-xs px-2.5 py-1 rounded-full"
+                  data-id="172"
+                  style="background: rgba(34, 197, 94, 0.1); color: #4ade80"
+                  >React</span
+                >
+                <span
+                  class="text-xs px-2.5 py-1 rounded-full"
+                  data-id="173"
+                  style="background: rgba(34, 197, 94, 0.1); color: #4ade80"
+                  >JavaScript</span
+                >
+                <span
+                  class="text-xs px-2.5 py-1 rounded-full"
+                  data-id="174"
+                  style="background: rgba(34, 197, 94, 0.1); color: #4ade80"
+                  >HTML/CSS</span
+                >
+                <span
+                  class="text-xs px-2.5 py-1 rounded-full"
+                  data-id="175"
+                  style="background: rgba(34, 197, 94, 0.1); color: #4ade80"
+                  >React Router</span
+                >
+                <span
+                  class="text-xs px-2.5 py-1 rounded-full"
+                  data-id="176"
+                  style="background: rgba(34, 197, 94, 0.1); color: #4ade80"
+                  >Context API</span
+                >
+              </div>
+            </div>
+            <!-- Backend & APIs -->
+            <div
+              class="skill-category-card glass p-6 fade-up"
+              data-id="177"
+              style="transition-delay: 0.2s"
+            >
+              <div class="flex items-center gap-3 mb-3" data-id="178">
+                <div
+                  class="w-11 h-11 rounded-xl flex items-center justify-center text-2xl"
+                  data-id="179"
+                  style="background: rgba(34, 197, 94, 0.12)"
+                >
+                  ⚙️
+                </div>
+                <h3 class="font-bold text-lg text-textpri" data-id="180">
+                  Backend &amp; APIs
+                </h3>
+              </div>
+              <p
+                class="text-textmut text-sm leading-relaxed mb-4"
+                data-id="181"
+              >
+                Worked with Node.js, Express, REST APIs, authentication
+                workflows, server-side routing, and API request handling to
+                support full-stack application features such as activity
+                creation, deletion, and protected user actions.
+              </p>
+              <div class="flex flex-wrap gap-2" data-id="182">
+                <span
+                  class="text-xs px-2.5 py-1 rounded-full"
+                  data-id="183"
+                  style="background: rgba(34, 197, 94, 0.1); color: #4ade80"
+                  >Node.js</span
+                >
+                <span
+                  class="text-xs px-2.5 py-1 rounded-full"
+                  data-id="184"
+                  style="background: rgba(34, 197, 94, 0.1); color: #4ade80"
+                  >Express</span
+                >
+                <span
+                  class="text-xs px-2.5 py-1 rounded-full"
+                  data-id="185"
+                  style="background: rgba(34, 197, 94, 0.1); color: #4ade80"
+                  >REST APIs</span
+                >
+                <span
+                  class="text-xs px-2.5 py-1 rounded-full"
+                  data-id="186"
+                  style="background: rgba(34, 197, 94, 0.1); color: #4ade80"
+                  >Auth Workflows</span
+                >
+              </div>
+            </div>
+            <!-- Databases -->
+            <div
+              class="skill-category-card glass p-6 fade-up"
+              data-id="187"
+              style="transition-delay: 0.3s"
+            >
+              <div class="flex items-center gap-3 mb-3" data-id="188">
+                <div
+                  class="w-11 h-11 rounded-xl flex items-center justify-center text-2xl"
+                  data-id="189"
+                  style="background: rgba(34, 197, 94, 0.12)"
+                >
+                  🗄️
+                </div>
+                <h3 class="font-bold text-lg text-textpri" data-id="190">
+                  Databases
+                </h3>
+              </div>
+              <p
+                class="text-textmut text-sm leading-relaxed mb-4"
+                data-id="191"
+              >
+                Used SQL and PostgreSQL to work with relational data,
+                troubleshoot database-related issues, understand backend data
+                models, and connect application behavior to stored records.
+              </p>
+              <div class="flex flex-wrap gap-2" data-id="192">
+                <span
+                  class="text-xs px-2.5 py-1 rounded-full"
+                  data-id="193"
+                  style="background: rgba(34, 197, 94, 0.1); color: #4ade80"
+                  >PostgreSQL</span
+                >
+                <span
+                  class="text-xs px-2.5 py-1 rounded-full"
+                  data-id="194"
+                  style="background: rgba(34, 197, 94, 0.1); color: #4ade80"
+                  >SQL</span
+                >
+                <span
+                  class="text-xs px-2.5 py-1 rounded-full"
+                  data-id="195"
+                  style="background: rgba(34, 197, 94, 0.1); color: #4ade80"
+                  >Relational Data</span
+                >
+                <span
+                  class="text-xs px-2.5 py-1 rounded-full"
+                  data-id="196"
+                  style="background: rgba(34, 197, 94, 0.1); color: #4ade80"
+                  >Schema Design</span
+                >
+              </div>
+            </div>
+            <!-- Debugging & Dev Tools -->
+            <div
+              class="skill-category-card glass p-6 fade-up"
+              data-id="197"
+              style="transition-delay: 0.4s"
+            >
+              <div class="flex items-center gap-3 mb-3" data-id="198">
+                <div
+                  class="w-11 h-11 rounded-xl flex items-center justify-center text-2xl"
+                  data-id="199"
+                  style="background: rgba(34, 197, 94, 0.12)"
+                >
+                  🐛
+                </div>
+                <h3 class="font-bold text-lg text-textpri" data-id="200">
+                  Debugging &amp; Dev Tools
+                </h3>
+              </div>
+              <p
+                class="text-textmut text-sm leading-relaxed mb-4"
+                data-id="201"
+              >
+                Used Git, GitHub, VS Code, Jira, browser developer tools, API
+                testing, and structured troubleshooting to identify bugs, test
+                fixes, manage code changes, and track technical work through
+                resolution.
+              </p>
+              <div class="flex flex-wrap gap-2" data-id="202">
+                <span
+                  class="text-xs px-2.5 py-1 rounded-full"
+                  data-id="203"
+                  style="background: rgba(34, 197, 94, 0.1); color: #4ade80"
+                  >Git</span
+                >
+                <span
+                  class="text-xs px-2.5 py-1 rounded-full"
+                  data-id="204"
+                  style="background: rgba(34, 197, 94, 0.1); color: #4ade80"
+                  >GitHub</span
+                >
+                <span
+                  class="text-xs px-2.5 py-1 rounded-full"
+                  data-id="205"
+                  style="background: rgba(34, 197, 94, 0.1); color: #4ade80"
+                  >VS Code</span
+                >
+                <span
+                  class="text-xs px-2.5 py-1 rounded-full"
+                  data-id="206"
+                  style="background: rgba(34, 197, 94, 0.1); color: #4ade80"
+                  >Jira</span
+                >
+                <span
+                  class="text-xs px-2.5 py-1 rounded-full"
+                  data-id="207"
+                  style="background: rgba(34, 197, 94, 0.1); color: #4ade80"
+                  >API Testing</span
+                >
+              </div>
+            </div>
+            <!-- Systems & Technical Support -->
+            <div
+              class="skill-category-card glass p-6 fade-up"
+              data-id="208"
+              style="transition-delay: 0.5s"
+            >
+              <div class="flex items-center gap-3 mb-3" data-id="209">
+                <div
+                  class="w-11 h-11 rounded-xl flex items-center justify-center text-2xl"
+                  data-id="210"
+                  style="background: rgba(34, 197, 94, 0.12)"
+                >
+                  🖱️
+                </div>
+                <h3 class="font-bold text-lg text-textpri" data-id="211">
+                  Systems &amp; Technical Support
+                </h3>
+              </div>
+              <p
+                class="text-textmut text-sm leading-relaxed mb-4"
+                data-id="212"
+              >
+                Supported Windows OS, Active Directory, user account management,
+                software functionality issues, access changes, secure
+                terminations, documentation updates, and escalations to
+                engineering teams.
+              </p>
+              <div class="flex flex-wrap gap-2" data-id="213">
+                <span
+                  class="text-xs px-2.5 py-1 rounded-full"
+                  data-id="214"
+                  style="background: rgba(34, 197, 94, 0.1); color: #4ade80"
+                  >Windows OS</span
+                >
+                <span
+                  class="text-xs px-2.5 py-1 rounded-full"
+                  data-id="215"
+                  style="background: rgba(34, 197, 94, 0.1); color: #4ade80"
+                  >Active Directory</span
+                >
+                <span
+                  class="text-xs px-2.5 py-1 rounded-full"
+                  data-id="216"
+                  style="background: rgba(34, 197, 94, 0.1); color: #4ade80"
+                  >User Management</span
+                >
+                <span
+                  class="text-xs px-2.5 py-1 rounded-full"
+                  data-id="217"
+                  style="background: rgba(34, 197, 94, 0.1); color: #4ade80"
+                  >Documentation</span
+                >
+              </div>
+            </div>
+            <!-- Process & Automation -->
+            <div
+              class="skill-category-card glass p-6 fade-up"
+              data-id="218"
+              style="transition-delay: 0.6s"
+            >
+              <div class="flex items-center gap-3 mb-3" data-id="219">
+                <div
+                  class="w-11 h-11 rounded-xl flex items-center justify-center text-2xl"
+                  data-id="220"
+                  style="background: rgba(34, 197, 94, 0.12)"
+                >
+                  🔄
+                </div>
+                <h3 class="font-bold text-lg text-textpri" data-id="221">
+                  Process &amp; Automation
+                </h3>
+              </div>
+              <p
+                class="text-textmut text-sm leading-relaxed mb-4"
+                data-id="222"
+              >
+                Improved workflows through technical analysis, documentation,
+                AI-assisted development, automation support, team collaboration,
+                and practical problem-solving across support and development
+                work.
+              </p>
+              <div class="flex flex-wrap gap-2" data-id="223">
+                <span
+                  class="text-xs px-2.5 py-1 rounded-full"
+                  data-id="224"
+                  style="background: rgba(34, 197, 94, 0.1); color: #4ade80"
+                  >Workflow Optimization</span
+                >
+                <span
+                  class="text-xs px-2.5 py-1 rounded-full"
+                  data-id="225"
+                  style="background: rgba(34, 197, 94, 0.1); color: #4ade80"
+                  >AI-Assisted Dev</span
+                >
+                <span
+                  class="text-xs px-2.5 py-1 rounded-full"
+                  data-id="226"
+                  style="background: rgba(34, 197, 94, 0.1); color: #4ade80"
+                  >Team Collaboration</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ==================== PROJECTS ==================== -->
+      <section data-id="227" id="projects-section-k9l0">
+        <div class="max-w-5xl mx-auto px-5" data-id="228">
+          <div class="text-center mb-16 fade-up" data-id="229">
+            <p
+              class="text-primary text-sm font-semibold uppercase tracking-widest mb-3"
+              data-id="230"
+            >
+              Portfolio
+            </p>
+            <h2
+              class="text-3xl md:text-4xl font-bold gradient-text"
+              data-id="231"
+              id="projects-title-j1k2"
+            >
+              What I've Built
+            </h2>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6" data-id="232">
+            <!-- Whack-A-Mole -->
+            <div
+              class="glass glow-hover flex flex-col fade-up"
+              data-id="233"
+              style="border-left: 4px solid #22c55e; transition-delay: 0.1s"
+            >
+              <div class="p-6 flex-1" data-id="234">
+                <div class="flex items-center gap-3 mb-4" data-id="235">
+                  <div
+                    class="w-10 h-10 rounded-xl flex items-center justify-center"
+                    data-id="236"
+                    style="background: rgba(34, 197, 94, 0.12)"
+                  >
+                    <i
+                      class="w-5 h-5"
+                      data-id="237"
+                      data-lucide="gamepad-2"
+                      style="color: #22c55e"
+                    ></i>
+                  </div>
+                  <h3 class="font-bold text-lg text-textpri" data-id="238">
+                    Whack-A-Mole Game
+                  </h3>
+                </div>
+                <p
+                  class="text-textmut text-sm mb-5 leading-relaxed"
+                  data-id="239"
+                >
+                  An interactive browser game built with React featuring dynamic
+                  rendering, randomized mole movement, score tracking, and
+                  restart logic. Solved timing and state-sync issues by
+                  restructuring the game loop using controlled intervals and
+                  centralized Context API state — preventing race-condition bugs
+                  during rapid user interactions.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-5" data-id="240">
+                  <span
+                    class="text-xs px-2 py-0.5 rounded-full"
+                    data-id="241"
+                    style="background: rgba(34, 197, 94, 0.1); color: #4ade80"
+                    >React</span
+                  >
+                  <span
+                    class="text-xs px-2 py-0.5 rounded-full"
+                    data-id="242"
+                    style="background: rgba(34, 197, 94, 0.1); color: #4ade80"
+                    >Context API</span
+                  >
+                  <span
+                    class="text-xs px-2 py-0.5 rounded-full"
+                    data-id="243"
+                    style="background: rgba(34, 197, 94, 0.1); color: #4ade80"
+                    >State Management</span
+                  >
+                  <span
+                    class="text-xs px-2 py-0.5 rounded-full"
+                    data-id="244"
+                    style="background: rgba(34, 197, 94, 0.1); color: #4ade80"
+                    >Component Architecture</span
+                  >
+                </div>
+              </div>
+              <div class="px-6 pb-6 flex gap-3" data-id="245">
+                <a
+                  class="btn-outline text-sm py-2 px-4 flex-1 justify-center"
+                  data-id="246"
+                  href="https://github.com/CharlesW1117/Whack-a-mole"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  ><i class="w-4 h-4" data-id="247" data-lucide="github"></i>
+                  GitHub</a
+                >
+                <a
+                  class="btn-primary text-sm py-2 px-4 flex-1 justify-center"
+                  data-id="248"
+                  href="https://charlesw1117.github.io/Whack-a-mole/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  ><i
+                    class="w-4 h-4"
+                    data-id="249"
+                    data-lucide="external-link"
+                  ></i>
+                  Live Demo</a
+                >
+              </div>
+            </div>
+            <!-- Fitness Tracker Pro -->
+            <div
+              class="glass glow-hover flex flex-col fade-up"
+              data-id="250"
+              style="border-left: 4px solid #4ade80; transition-delay: 0.25s"
+            >
+              <div class="p-6 flex-1" data-id="251">
+                <div class="flex items-center gap-3 mb-4" data-id="252">
+                  <div
+                    class="w-10 h-10 rounded-xl flex items-center justify-center"
+                    data-id="253"
+                    style="background: rgba(74, 222, 128, 0.12)"
+                  >
+                    <i
+                      class="w-5 h-5"
+                      data-id="254"
+                      data-lucide="activity"
+                      style="color: #4ade80"
+                    ></i>
+                  </div>
+                  <h3 class="font-bold text-lg text-textpri" data-id="255">
+                    Fitness Tracker Pro
+                  </h3>
+                  <span
+                    class="text-xs px-2.5 py-0.5 rounded-full font-semibold"
+                    data-id="256"
+                    style="
+                      background: rgba(34, 197, 94, 0.15);
+                      color: #4ade80;
+                      border: 1px solid rgba(34, 197, 94, 0.3);
+                    "
+                    >In Progress</span
+                  >
+                </div>
+                <p
+                  class="text-textmut text-sm mb-5 leading-relaxed"
+                  data-id="257"
+                >
+                  A collaborative full-stack fitness application with page
+                  routing, global state management, and REST API communication.
+                  Implemented activity creation, deletion, and JWT
+                  authentication workflows. Built reusable components, handled
+                  token-based auth, and ensured secure user-specific actions
+                  such as authorized activity deletion.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-5" data-id="258">
+                  <span
+                    class="text-xs px-2 py-0.5 rounded-full"
+                    data-id="259"
+                    style="background: rgba(74, 222, 128, 0.1); color: #4ade80"
+                    >React</span
+                  >
+                  <span
+                    class="text-xs px-2 py-0.5 rounded-full"
+                    data-id="260"
+                    style="background: rgba(74, 222, 128, 0.1); color: #4ade80"
+                    >Node.js</span
+                  >
+                  <span
+                    class="text-xs px-2 py-0.5 rounded-full"
+                    data-id="261"
+                    style="background: rgba(74, 222, 128, 0.1); color: #4ade80"
+                    >Express</span
+                  >
+                  <span
+                    class="text-xs px-2 py-0.5 rounded-full"
+                    data-id="262"
+                    style="background: rgba(74, 222, 128, 0.1); color: #4ade80"
+                    >PostgreSQL</span
+                  >
+                  <span
+                    class="text-xs px-2 py-0.5 rounded-full"
+                    data-id="263"
+                    style="background: rgba(74, 222, 128, 0.1); color: #4ade80"
+                    >REST APIs</span
+                  >
+                  <span
+                    class="text-xs px-2 py-0.5 rounded-full"
+                    data-id="264"
+                    style="background: rgba(74, 222, 128, 0.1); color: #4ade80"
+                    >Context API</span
+                  >
+                  <span
+                    class="text-xs px-2 py-0.5 rounded-full"
+                    data-id="265"
+                    style="background: rgba(74, 222, 128, 0.1); color: #4ade80"
+                    >JWT</span
+                  >
+                </div>
+              </div>
+              <div class="px-6 pb-6 flex gap-3" data-id="266">
+                <a
+                  class="btn-outline text-sm py-2 px-4 flex-1 justify-center"
+                  data-id="267"
+                  href="https://github.com/CharlesW1117/Fitness-Trackr-Pro-PT-1-"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  ><i class="w-4 h-4" data-id="268" data-lucide="github"></i>
+                  GitHub</a
+                >
+                <a
+                  class="btn-primary text-sm py-2 px-4 flex-1 justify-center"
+                  data-id="269"
+                  href="https://charlesw1117.github.io/Fitness-Trackr-Pro-PT-1-/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  ><i
+                    class="w-4 h-4"
+                    data-id="270"
+                    data-lucide="external-link"
+                  ></i>
+                  Live Demo</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ==================== ARCHITECTURE ==================== -->
+      <section data-id="271" id="architecture-section-m1n2">
+        <div class="max-w-5xl mx-auto px-5" data-id="272">
+          <div class="text-center mb-16 fade-up" data-id="273">
+            <p
+              class="text-primary text-sm font-semibold uppercase tracking-widest mb-3"
+              data-id="274"
+            >
+              System Design
+            </p>
+            <h2
+              class="text-3xl md:text-4xl font-bold gradient-text"
+              data-id="275"
+              id="arch-title-l3m4"
+            >
+              How It All Connects
+            </h2>
+          </div>
+          <div
+            class="fade-up flex flex-col md:flex-row items-center justify-center gap-4 md:gap-0"
+            data-id="276"
+          >
+            <div
+              class="arch-box relative glass p-6 md:p-8 text-center flex-1 max-w-xs cursor-default"
+              data-id="277"
+              style="border: 1px solid rgba(34, 197, 94, 0.25)"
+            >
+              <div class="tooltip-box" data-id="278">
+                Renders UI, manages state with hooks &amp; Context API, calls
+                REST endpoints
+              </div>
+              <div
+                class="w-12 h-12 rounded-xl mx-auto mb-3 flex items-center justify-center text-2xl"
+                data-id="279"
+                style="background: rgba(34, 197, 94, 0.15)"
+              >
+                <i
+                  class="w-6 h-6"
+                  data-id="280"
+                  data-lucide="monitor"
+                  style="color: #22c55e"
+                ></i>
+              </div>
+              <h3 class="font-bold text-textpri mb-1" data-id="281">
+                React Frontend
+              </h3>
+              <p class="text-xs text-textmut" data-id="282">
+                UI Components · State · Hooks
+              </p>
+            </div>
+            <div
+              class="arch-arrow flex-shrink-0 flex flex-col md:flex-row items-center gap-1 py-2 md:py-0 md:px-3"
+              data-id="283"
+            >
+              <span class="hidden md:block" data-id="284">───</span>
+              <span class="text-xs font-mono opacity-80" data-id="285"
+                >HTTP / JSON</span
+              >
+              <span class="hidden md:block" data-id="286">──▸</span>
+              <span class="md:hidden text-lg" data-id="287">▾</span>
+            </div>
+            <div
+              class="arch-box relative glass p-6 md:p-8 text-center flex-1 max-w-xs cursor-default"
+              data-id="288"
+              style="border: 1px solid rgba(34, 197, 94, 0.2)"
+            >
+              <div class="tooltip-box" data-id="289">
+                Handles routing, validates requests, applies middleware, returns
+                JSON
+              </div>
+              <div
+                class="w-12 h-12 rounded-xl mx-auto mb-3 flex items-center justify-center text-2xl"
+                data-id="290"
+                style="background: rgba(34, 197, 94, 0.15)"
+              >
+                <i
+                  class="w-6 h-6"
+                  data-id="291"
+                  data-lucide="server"
+                  style="color: #4ade80"
+                ></i>
+              </div>
+              <h3 class="font-bold text-textpri mb-1" data-id="292">
+                Express API Server
+              </h3>
+              <p class="text-xs text-textmut" data-id="293">
+                Routes · Middleware · Auth
+              </p>
+            </div>
+            <div
+              class="arch-arrow flex-shrink-0 flex flex-col md:flex-row items-center gap-1 py-2 md:py-0 md:px-3"
+              data-id="294"
+            >
+              <span class="hidden md:block" data-id="295">───</span>
+              <span class="text-xs font-mono opacity-80" data-id="296"
+                >SQL Queries</span
+              >
+              <span class="hidden md:block" data-id="297">──▸</span>
+              <span class="md:hidden text-lg" data-id="298">▾</span>
+            </div>
+            <div
+              class="arch-box relative glass p-6 md:p-8 text-center flex-1 max-w-xs cursor-default"
+              data-id="299"
+              style="border: 1px solid rgba(34, 197, 94, 0.15)"
+            >
+              <div class="tooltip-box" data-id="300">
+                Stores relational data, handles joins, enforces schema integrity
+              </div>
+              <div
+                class="w-12 h-12 rounded-xl mx-auto mb-3 flex items-center justify-center text-2xl"
+                data-id="301"
+                style="background: rgba(34, 197, 94, 0.15)"
+              >
+                <i
+                  class="w-6 h-6"
+                  data-id="302"
+                  data-lucide="database"
+                  style="color: #22c55e"
+                ></i>
+              </div>
+              <h3 class="font-bold text-textpri mb-1" data-id="303">
+                PostgreSQL DB
+              </h3>
+              <p class="text-xs text-textmut" data-id="304">
+                Tables · Relations · Indexes
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ==================== SKILL BARS ==================== -->
+      <section data-id="305" id="skillbars-section-o3p4">
+        <div class="max-w-3xl mx-auto px-5" data-id="306">
+          <div class="text-center mb-16 fade-up" data-id="307">
+            <p
+              class="text-primary text-sm font-semibold uppercase tracking-widest mb-3"
+              data-id="308"
+            >
+              Proficiency
+            </p>
+            <h2
+              class="text-3xl md:text-4xl font-bold gradient-text"
+              data-id="309"
+              id="skillbars-title-n5o6"
+            >
+              Proficiency Levels
+            </h2>
+          </div>
+          <div class="space-y-5" data-id="310" id="skill-bars-container-p7q8">
+            <div
+              class="skill-item fade-up"
+              data-id="311"
+              data-percent="85"
+              style="transition-delay: 0.05s"
+            >
+              <div class="flex justify-between mb-2" data-id="312">
+                <span class="text-sm font-medium text-textpri" data-id="313"
+                  >JavaScript ES6+</span
+                >
+                <span
+                  class="text-sm font-semibold text-primary tabular-nums"
+                  data-id="314"
+                  >85%</span
+                >
+              </div>
+              <div
+                class="w-full h-2.5 rounded-full"
+                data-id="315"
+                style="background: rgba(255, 255, 255, 0.06)"
+              >
+                <div class="skill-bar-fill" data-id="316"></div>
+              </div>
+            </div>
+            <div
+              class="skill-item fade-up"
+              data-id="317"
+              data-percent="82"
+              style="transition-delay: 0.1s"
+            >
+              <div class="flex justify-between mb-2" data-id="318">
+                <span class="text-sm font-medium text-textpri" data-id="319"
+                  >React &amp; JSX</span
+                >
+                <span
+                  class="text-sm font-semibold text-primary tabular-nums"
+                  data-id="320"
+                  >82%</span
+                >
+              </div>
+              <div
+                class="w-full h-2.5 rounded-full"
+                data-id="321"
+                style="background: rgba(255, 255, 255, 0.06)"
+              >
+                <div class="skill-bar-fill" data-id="322"></div>
+              </div>
+            </div>
+            <div
+              class="skill-item fade-up"
+              data-id="323"
+              data-percent="80"
+              style="transition-delay: 0.15s"
+            >
+              <div class="flex justify-between mb-2" data-id="324">
+                <span class="text-sm font-medium text-textpri" data-id="325"
+                  >Context API &amp; State</span
+                >
+                <span
+                  class="text-sm font-semibold text-primary tabular-nums"
+                  data-id="326"
+                  >80%</span
+                >
+              </div>
+              <div
+                class="w-full h-2.5 rounded-full"
+                data-id="327"
+                style="background: rgba(255, 255, 255, 0.06)"
+              >
+                <div class="skill-bar-fill" data-id="328"></div>
+              </div>
+            </div>
+            <div
+              class="skill-item fade-up"
+              data-id="329"
+              data-percent="78"
+              style="transition-delay: 0.2s"
+            >
+              <div class="flex justify-between mb-2" data-id="330">
+                <span class="text-sm font-medium text-textpri" data-id="331"
+                  >Express REST APIs</span
+                >
+                <span
+                  class="text-sm font-semibold text-primary tabular-nums"
+                  data-id="332"
+                  >78%</span
+                >
+              </div>
+              <div
+                class="w-full h-2.5 rounded-full"
+                data-id="333"
+                style="background: rgba(255, 255, 255, 0.06)"
+              >
+                <div class="skill-bar-fill" data-id="334"></div>
+              </div>
+            </div>
+            <div
+              class="skill-item fade-up"
+              data-id="335"
+              data-percent="76"
+              style="transition-delay: 0.25s"
+            >
+              <div class="flex justify-between mb-2" data-id="336">
+                <span class="text-sm font-medium text-textpri" data-id="337"
+                  >Git &amp; GitHub</span
+                >
+                <span
+                  class="text-sm font-semibold text-primary tabular-nums"
+                  data-id="338"
+                  >76%</span
+                >
+              </div>
+              <div
+                class="w-full h-2.5 rounded-full"
+                data-id="339"
+                style="background: rgba(255, 255, 255, 0.06)"
+              >
+                <div class="skill-bar-fill" data-id="340"></div>
+              </div>
+            </div>
+            <div
+              class="skill-item fade-up"
+              data-id="341"
+              data-percent="74"
+              style="transition-delay: 0.3s"
+            >
+              <div class="flex justify-between mb-2" data-id="342">
+                <span class="text-sm font-medium text-textpri" data-id="343"
+                  >PostgreSQL &amp; SQL</span
+                >
+                <span
+                  class="text-sm font-semibold text-primary tabular-nums"
+                  data-id="344"
+                  >74%</span
+                >
+              </div>
+              <div
+                class="w-full h-2.5 rounded-full"
+                data-id="345"
+                style="background: rgba(255, 255, 255, 0.06)"
+              >
+                <div class="skill-bar-fill" data-id="346"></div>
+              </div>
+            </div>
+            <div
+              class="skill-item fade-up"
+              data-id="347"
+              data-percent="73"
+              style="transition-delay: 0.35s"
+            >
+              <div class="flex justify-between mb-2" data-id="348">
+                <span class="text-sm font-medium text-textpri" data-id="349"
+                  >Jira &amp; Dev Workflows</span
+                >
+                <span
+                  class="text-sm font-semibold text-primary tabular-nums"
+                  data-id="350"
+                  >73%</span
+                >
+              </div>
+              <div
+                class="w-full h-2.5 rounded-full"
+                data-id="351"
+                style="background: rgba(255, 255, 255, 0.06)"
+              >
+                <div class="skill-bar-fill" data-id="352"></div>
+              </div>
+            </div>
+            <div
+              class="skill-item fade-up"
+              data-id="353"
+              data-percent="70"
+              style="transition-delay: 0.4s"
+            >
+              <div class="flex justify-between mb-2" data-id="354">
+                <span class="text-sm font-medium text-textpri" data-id="355"
+                  >JWT Authentication</span
+                >
+                <span
+                  class="text-sm font-semibold text-primary tabular-nums"
+                  data-id="356"
+                  >70%</span
+                >
+              </div>
+              <div
+                class="w-full h-2.5 rounded-full"
+                data-id="357"
+                style="background: rgba(255, 255, 255, 0.06)"
+              >
+                <div class="skill-bar-fill" data-id="358"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ==================== CODE SHOWCASE ==================== -->
+      <section data-id="359" id="code-section-q5r6">
+        <div class="max-w-3xl mx-auto px-5" data-id="360">
+          <div class="text-center mb-16 fade-up" data-id="361">
+            <p
+              class="text-primary text-sm font-semibold uppercase tracking-widest mb-3"
+              data-id="362"
+            >
+              Code Samples
+            </p>
+            <h2
+              class="text-3xl md:text-4xl font-bold gradient-text"
+              data-id="363"
+              id="code-title-r7s8"
+            >
+              A Peek at My Code
+            </h2>
+          </div>
+          <div class="fade-up" data-id="364">
+            <div class="flex gap-1 border-b border-white/5 mb-0" data-id="365">
+              <button
+                class="code-tab active"
+                data-code-tab="react"
+                data-id="366"
+              >
+                <i
+                  class="w-3.5 h-3.5 inline mr-1.5"
+                  data-id="367"
+                  data-lucide="atom"
+                  style="vertical-align: -2px"
+                ></i
+                >React Component
+              </button>
+              <button class="code-tab" data-code-tab="express" data-id="368">
+                <i
+                  class="w-3.5 h-3.5 inline mr-1.5"
+                  data-id="369"
+                  data-lucide="server"
+                  style="vertical-align: -2px"
+                ></i
+                >Express Route
+              </button>
+              <button class="code-tab" data-code-tab="sql" data-id="370">
+                <i
+                  class="w-3.5 h-3.5 inline mr-1.5"
+                  data-id="371"
+                  data-lucide="database"
+                  style="vertical-align: -2px"
+                ></i
+                >SQL Schema
+              </button>
+            </div>
+            <div
+              class="rounded-b-2xl overflow-hidden"
+              data-id="372"
+              style="
+                background: var(--codebg);
+                border: 1px solid var(--glass-border);
+                border-top: none;
+              "
+            >
+              <div
+                class="code-panel active p-5 md:p-6 overflow-x-auto"
+                data-id="373"
+                id="code-panel-react-t9u0"
+              >
+                <pre
+                  class="text-sm leading-relaxed font-mono"
+                  data-id="374"
+                ><code data-id="375"><span class="syn-kw" data-id="376">const</span> <span class="syn-fn" data-id="377">MoleHole</span> = ({ <span class="syn-var" data-id="378">isActive</span>, <span class="syn-var" data-id="379">position</span>, <span class="syn-var" data-id="380">onWhack</span> }) =&gt; {
   <span class="syn-kw" data-id="381">return</span> (
     <span class="syn-tag" data-id="382">&lt;div</span> <span class="syn-attr" data-id="383">className</span>=<span class="syn-str" data-id="384">"hole"</span> <span class="syn-attr" data-id="385">onClick</span>={() =&gt; <span class="syn-fn" data-id="386">onWhack</span>(<span class="syn-var" data-id="387">position</span>)}<span class="syn-tag" data-id="388">&gt;</span>
       {<span class="syn-var" data-id="389">isActive</span> &amp;&amp; (
@@ -562,9 +1624,16 @@
     <span class="syn-tag" data-id="402">&lt;/div&gt;</span>
   );
 };</code></pre>
-</div>
-<div class="code-panel p-5 md:p-6 overflow-x-auto" data-id="403" id="code-panel-express-v1w2">
-<pre class="text-sm leading-relaxed font-mono" data-id="404"><code data-id="405"><span class="syn-var" data-id="406">router</span>.<span class="syn-fn" data-id="407">get</span>(<span class="syn-str" data-id="408">'/activities'</span>, <span class="syn-var" data-id="409">authenticateToken</span>, <span class="syn-kw" data-id="410">async</span> (<span class="syn-var" data-id="411">req</span>, <span class="syn-var" data-id="412">res</span>) =&gt; {
+              </div>
+              <div
+                class="code-panel p-5 md:p-6 overflow-x-auto"
+                data-id="403"
+                id="code-panel-express-v1w2"
+              >
+                <pre
+                  class="text-sm leading-relaxed font-mono"
+                  data-id="404"
+                ><code data-id="405"><span class="syn-var" data-id="406">router</span>.<span class="syn-fn" data-id="407">get</span>(<span class="syn-str" data-id="408">'/activities'</span>, <span class="syn-var" data-id="409">authenticateToken</span>, <span class="syn-kw" data-id="410">async</span> (<span class="syn-var" data-id="411">req</span>, <span class="syn-var" data-id="412">res</span>) =&gt; {
   <span class="syn-kw" data-id="413">try</span> {
     <span class="syn-kw" data-id="414">const</span> { <span class="syn-var" data-id="415">rows</span> } = <span class="syn-kw" data-id="416">await</span> <span class="syn-var" data-id="417">pool</span>.<span class="syn-fn" data-id="418">query</span>(
       <span class="syn-str" data-id="419">`SELECT * FROM activities
@@ -577,9 +1646,16 @@
     <span class="syn-var" data-id="429">res</span>.<span class="syn-fn" data-id="430">status</span>(<span class="syn-num" data-id="431">500</span>).<span class="syn-fn" data-id="432">json</span>({ <span class="syn-var" data-id="433">error</span>: <span class="syn-str" data-id="434">'Server error'</span> });
   }
 });</code></pre>
-</div>
-<div class="code-panel p-5 md:p-6 overflow-x-auto" data-id="435" id="code-panel-sql-x3y4">
-<pre class="text-sm leading-relaxed font-mono" data-id="436"><code data-id="437"><span class="syn-kw" data-id="438">CREATE TABLE</span> <span class="syn-fn" data-id="439">activities</span> (
+              </div>
+              <div
+                class="code-panel p-5 md:p-6 overflow-x-auto"
+                data-id="435"
+                id="code-panel-sql-x3y4"
+              >
+                <pre
+                  class="text-sm leading-relaxed font-mono"
+                  data-id="436"
+                ><code data-id="437"><span class="syn-kw" data-id="438">CREATE TABLE</span> <span class="syn-fn" data-id="439">activities</span> (
   <span class="syn-var" data-id="440">id</span>          <span class="syn-type" data-id="441">SERIAL</span> <span class="syn-kw" data-id="442">PRIMARY KEY</span>,
   <span class="syn-var" data-id="443">user_id</span>     <span class="syn-type" data-id="444">INTEGER</span> <span class="syn-kw" data-id="445">REFERENCES</span> <span class="syn-fn" data-id="446">users</span>(<span class="syn-var" data-id="447">id</span>),
   <span class="syn-var" data-id="448">name</span>        <span class="syn-type" data-id="449">VARCHAR(255)</span> <span class="syn-kw" data-id="450">NOT NULL</span>,
@@ -587,177 +1663,538 @@
   <span class="syn-var" data-id="453">completed</span>   <span class="syn-type" data-id="454">BOOLEAN</span>      <span class="syn-kw" data-id="455">DEFAULT</span> <span class="syn-num" data-id="456">false</span>,
   <span class="syn-var" data-id="457">created_at</span>  <span class="syn-type" data-id="458">TIMESTAMP</span>    <span class="syn-kw" data-id="459">DEFAULT</span> <span class="syn-fn" data-id="460">NOW</span>()
 );</code></pre>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- ==================== EXPERIENCE ==================== -->
-<section data-id="461" id="experience-section-x1y2">
-<div class="max-w-4xl mx-auto px-5" data-id="462">
-<div class="text-center mb-16 fade-up" data-id="463">
-<p class="text-primary text-sm font-semibold uppercase tracking-widest mb-3" data-id="464">Career</p>
-<h2 class="text-3xl md:text-4xl font-bold gradient-text" data-id="465" id="experience-title-z5a6">Work Experience</h2>
-</div>
-<div class="space-y-6" data-id="466">
-<!-- Paycom -->
-<div class="fade-up" data-id="467">
-<div class="glass p-6 md:p-8" data-id="468" style="border-left: 4px solid #22c55e;">
-<div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4" data-id="469">
-<div data-id="470">
-<h3 class="font-bold text-xl text-textpri mb-1" data-id="471" id="exp-role-b7c8">TAC Analyst III, Payroll Module Support</h3>
-<p class="text-primary font-semibold" data-id="472">Paycom</p>
-<p class="text-textmut text-sm" data-id="473">Oklahoma City, OK</p>
-</div>
-<span class="pill mt-3 md:mt-0 self-start" data-id="474">
-<i class="w-3.5 h-3.5" data-id="475" data-lucide="calendar"></i> Dec 2023 – Apr 2026
-                </span>
-</div>
-<div class="space-y-3 mt-6" data-id="476">
-<p class="exp-bullet text-textmut text-sm leading-relaxed" data-id="477">Troubleshot payroll module issues for client-facing Paycom employees, including check approval errors, manual check defects, payroll process failures, user access issues, and system functionality concerns.</p>
-<p class="exp-bullet text-textmut text-sm leading-relaxed" data-id="478">Managed technical support tickets in Jira by documenting issue details, tracking investigation progress, coordinating escalations, and following payroll defects through resolution.</p>
-<p class="exp-bullet text-textmut text-sm leading-relaxed" data-id="479">Investigated complex front-end and back-end system behavior by researching errors, reviewing process flow, validating expected functionality, and using technical analysis to identify root causes.</p>
-<p class="exp-bullet text-textmut text-sm leading-relaxed" data-id="480">Wrote proactive queries to identify user errors, payroll issues, and potential bugs before clients reported them, helping reduce downstream support impact and improve issue visibility.</p>
-<p class="exp-bullet text-textmut text-sm leading-relaxed" data-id="481">Partnered closely with payroll development teams and product managers to confirm system behavior, escalate defects, provide research-backed findings, and support timely bug resolution.</p>
-<p class="exp-bullet text-textmut text-sm leading-relaxed" data-id="482">Created 100+ FAQs and knowledge base articles that improved internal troubleshooting consistency, reduced repeated questions, and gave client-facing teams clearer guidance.</p>
-<p class="exp-bullet text-textmut text-sm leading-relaxed" data-id="483">Cut ticket response and resolution times nearly in half by combining strong troubleshooting, Jira ticket management, documentation, cross-team collaboration, research, and development knowledge.</p>
-</div>
-<div class="flex flex-wrap gap-2 mt-6 pt-5" data-id="484" style="border-top: 1px solid var(--glass-border);">
-<span class="text-xs px-2.5 py-1 rounded-full" data-id="485" style="background:rgba(34,197,94,0.1); color:#4ade80;">Jira</span>
-<span class="text-xs px-2.5 py-1 rounded-full" data-id="486" style="background:rgba(34,197,94,0.1); color:#4ade80;">SQL</span>
-<span class="text-xs px-2.5 py-1 rounded-full" data-id="487" style="background:rgba(34,197,94,0.1); color:#4ade80;">Active Directory</span>
-<span class="text-xs px-2.5 py-1 rounded-full" data-id="488" style="background:rgba(34,197,94,0.1); color:#4ade80;">Technical Analysis</span>
-<span class="text-xs px-2.5 py-1 rounded-full" data-id="489" style="background:rgba(34,197,94,0.1); color:#4ade80;">Documentation</span>
-</div>
-</div>
-</div>
-<!-- Costco -->
-<div class="fade-up" data-id="490" style="transition-delay:0.15s;">
-<div class="glass p-6 md:p-8" data-id="491" style="border-left: 4px solid #4ade80;">
-<div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4" data-id="492">
-<div data-id="493">
-<h3 class="font-bold text-xl text-textpri mb-1" data-id="494">E-Commerce Agent</h3>
-<p class="text-primary font-semibold" data-id="495">Costco Wholesale</p>
-<p class="text-textmut text-sm" data-id="496">Oklahoma City, OK</p>
-</div>
-<span class="pill mt-3 md:mt-0 self-start" data-id="497">
-<i class="w-3.5 h-3.5" data-id="498" data-lucide="calendar"></i> Jul 2020 – Dec 2020
-                </span>
-</div>
-<div class="space-y-3 mt-4" data-id="499">
-<p class="exp-bullet text-textmut text-sm leading-relaxed" data-id="500">Delivered customer support across chat, phone, and logistics channels while resolving issues efficiently, maintaining compliance, and coordinating backend order fulfillment.</p>
-</div>
-</div>
-</div>
-<!-- Farmers Insurance -->
-<div class="fade-up" data-id="501" style="transition-delay:0.3s;">
-<div class="glass p-6 md:p-8" data-id="502" style="border-left: 4px solid #4ade80;">
-<div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4" data-id="503">
-<div data-id="504">
-<h3 class="font-bold text-xl text-textpri mb-1" data-id="505">Processor</h3>
-<p class="text-primary font-semibold" data-id="506">Farmers Insurance</p>
-<p class="text-textmut text-sm" data-id="507">Edmond, OK</p>
-</div>
-<span class="pill mt-3 md:mt-0 self-start" data-id="508">
-<i class="w-3.5 h-3.5" data-id="509" data-lucide="calendar"></i> Nov 2018 – Dec 2019
-                </span>
-</div>
-<div class="space-y-3 mt-4" data-id="510">
-<p class="exp-bullet text-textmut text-sm leading-relaxed" data-id="511">Processed 1,000+ inbound documents daily with 99.8% accuracy, operating automated mail systems and ensuring precise routing to internal departments.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- ==================== EDUCATION ==================== -->
-<section data-id="512" id="education-section-e1d2">
-<div class="max-w-5xl mx-auto px-5" data-id="513">
-<div class="text-center mb-16 fade-up" data-id="514">
-<p class="text-primary text-sm font-semibold uppercase tracking-widest mb-3" data-id="515">Academics</p>
-<h2 class="text-3xl md:text-4xl font-bold gradient-text" data-id="516">Education</h2>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6" data-id="517">
-<!-- Fullstack Academy -->
-<div class="edu-card glass p-6 fade-up" data-id="518" style="border-top: 4px solid #22c55e; transition-delay:0.1s;">
-<div class="flex items-center gap-3 mb-3" data-id="519">
-<span class="text-2xl" data-id="520">🎓</span>
-<div data-id="521">
-<h3 class="font-bold text-lg text-textpri" data-id="522">Software Engineering</h3>
-<p class="text-primary text-sm font-semibold" data-id="523">Fullstack Academy</p>
-</div>
-</div>
-<p class="text-textmut text-sm mb-3" data-id="524">Expected July 2026</p>
-<p class="text-textmut text-sm leading-relaxed mb-4" data-id="525">Focused on JavaScript, React, Node.js, Express, PostgreSQL, REST APIs, and full-stack application development.</p>
-<span class="text-xs px-2.5 py-1 rounded-full font-semibold" data-id="526" style="background:rgba(34,197,94,0.15); color:#4ade80; border: 1px solid rgba(34,197,94,0.3);">In Progress</span>
-</div>
-<!-- Mid-America Christian University -->
-<div class="edu-card glass p-6 fade-up" data-id="527" style="border-top: 4px solid #4ade80; transition-delay:0.2s;">
-<div class="flex items-center gap-3 mb-3" data-id="528">
-<span class="text-2xl" data-id="529">🎓</span>
-<div data-id="530">
-<h3 class="font-bold text-lg text-textpri" data-id="531">Bachelor of Business Administration</h3>
-<p class="text-primary text-sm font-semibold" data-id="532">Mid-America Christian University</p>
-</div>
-</div>
-<p class="text-textmut text-sm mb-3" data-id="533">Aug 2020 – Oct 2023</p>
-<div class="flex flex-wrap gap-2" data-id="534">
-<span class="text-xs px-2.5 py-1 rounded-full" data-id="535" style="background:rgba(34,197,94,0.1); color:#4ade80;">Business Analysis</span>
-<span class="text-xs px-2.5 py-1 rounded-full" data-id="536" style="background:rgba(34,197,94,0.1); color:#4ade80;">Accounting</span>
-<span class="text-xs px-2.5 py-1 rounded-full" data-id="537" style="background:rgba(34,197,94,0.1); color:#4ade80;">Financial Analysis</span>
-<span class="text-xs px-2.5 py-1 rounded-full" data-id="538" style="background:rgba(34,197,94,0.1); color:#4ade80;">Leadership Development</span>
-</div>
-</div>
-<!-- Northern Oklahoma College -->
-<div class="edu-card glass p-6 fade-up" data-id="539" style="border-top: 4px solid #4ade80; transition-delay:0.3s;">
-<div class="flex items-center gap-3 mb-3" data-id="540">
-<span class="text-2xl" data-id="541">🎓</span>
-<div data-id="542">
-<h3 class="font-bold text-lg text-textpri" data-id="543">Associate of Behavioral Science</h3>
-<p class="text-primary text-sm font-semibold" data-id="544">Northern Oklahoma College</p>
-</div>
-</div>
-<p class="text-textmut text-sm mb-3" data-id="545">2014 – 2017</p>
-<div class="flex flex-wrap gap-2" data-id="546">
-<span class="text-xs px-2.5 py-1 rounded-full" data-id="547" style="background:rgba(34,197,94,0.1); color:#4ade80;">Psychology</span>
-<span class="text-xs px-2.5 py-1 rounded-full" data-id="548" style="background:rgba(34,197,94,0.1); color:#4ade80;">Human Behavior</span>
-<span class="text-xs px-2.5 py-1 rounded-full" data-id="549" style="background:rgba(34,197,94,0.1); color:#4ade80;">Problem Solving</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- ==================== CONTACT ==================== -->
-<section data-id="550" id="contact-section-z3a4">
-<div class="max-w-3xl mx-auto px-5 text-center" data-id="551">
-<div class="fade-up" data-id="552">
-<p class="text-primary text-sm font-semibold uppercase tracking-widest mb-3" data-id="553">Get In Touch</p>
-<h2 class="text-3xl md:text-4xl font-bold gradient-text mb-4" data-id="554" id="contact-title-d9e0">Let's Connect</h2>
-<p class="text-textmut text-base mb-10" data-id="555">Open to opportunities, collaborations, and interesting problems.</p>
-<div class="flex flex-wrap justify-center gap-4 mb-8" data-id="556">
-<a aria-label="Email Me" class="contact-btn" data-id="557" href="mailto:charleskwadejr1088@gmail.com">
-<svg data-id="558" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20"><rect data-id="559" height="16" rx="2" ry="2" width="20" x="2" y="4"></rect><polyline data-id="560" points="22,6 12,13 2,6"></polyline></svg>
-<span data-id="561">Email Me</span>
-</a>
-<a aria-label="GitHub" class="contact-btn" data-id="562" href="https://github.com/CharlesW1117" rel="noopener noreferrer" target="_blank">
-<svg data-id="563" fill="currentColor" height="20" viewbox="0 0 24 24" width="20"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.341-3.369-1.341-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" data-id="564"></path></svg>
-<span data-id="565">GitHub</span>
-</a>
-<a aria-label="LinkedIn" class="contact-btn" data-id="566" href="https://linkedin.com/in/charles-wadejr-47b8a4197/" rel="noopener noreferrer" target="_blank">
-<svg data-id="567" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 24 24" width="20"><rect data-id="568" fill="none" height="20" rx="4" ry="4" width="20" x="2" y="2"></rect><line data-id="569" x1="8" x2="8" y1="10" y2="17"></line><circle cx="8" cy="7" data-id="570" fill="currentColor" r="1"></circle><path d="M12 10v7M12 13a3 3 0 016 0v4" data-id="571"></path></svg>
-<span data-id="572">LinkedIn</span>
-</a>
-</div>
-</div>
-</div>
-</section>
-</main>
-<!-- ==================== FOOTER ==================== -->
-<footer class="py-10 border-t" data-id="573" id="footer-section-f1g2" style="border-color: rgba(34,197,94,0.08);">
-<div class="max-w-3xl mx-auto px-5 text-center" data-id="574">
-<p class="text-textmut text-sm" data-id="575">Built with React · Node.js · PostgreSQL · Fullstack Academy · Charles Wade · 2026</p>
-</div>
-</footer>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ==================== EXPERIENCE ==================== -->
+      <section data-id="461" id="experience-section-x1y2">
+        <div class="max-w-4xl mx-auto px-5" data-id="462">
+          <div class="text-center mb-16 fade-up" data-id="463">
+            <p
+              class="text-primary text-sm font-semibold uppercase tracking-widest mb-3"
+              data-id="464"
+            >
+              Career
+            </p>
+            <h2
+              class="text-3xl md:text-4xl font-bold gradient-text"
+              data-id="465"
+              id="experience-title-z5a6"
+            >
+              Work Experience
+            </h2>
+          </div>
+          <div class="space-y-6" data-id="466">
+            <!-- Paycom -->
+            <div class="fade-up" data-id="467">
+              <div
+                class="glass p-6 md:p-8"
+                data-id="468"
+                style="border-left: 4px solid #22c55e"
+              >
+                <div
+                  class="flex flex-col md:flex-row md:items-start md:justify-between mb-4"
+                  data-id="469"
+                >
+                  <div data-id="470">
+                    <h3
+                      class="font-bold text-xl text-textpri mb-1"
+                      data-id="471"
+                      id="exp-role-b7c8"
+                    >
+                      TAC Analyst III, Payroll Module Support
+                    </h3>
+                    <p class="text-primary font-semibold" data-id="472">
+                      Paycom
+                    </p>
+                    <p class="text-textmut text-sm" data-id="473">
+                      Oklahoma City, OK
+                    </p>
+                  </div>
+                  <span class="pill mt-3 md:mt-0 self-start" data-id="474">
+                    <i
+                      class="w-3.5 h-3.5"
+                      data-id="475"
+                      data-lucide="calendar"
+                    ></i>
+                    Dec 2023 – Apr 2026
+                  </span>
+                </div>
+                <div class="space-y-3 mt-6" data-id="476">
+                  <p
+                    class="exp-bullet text-textmut text-sm leading-relaxed"
+                    data-id="477"
+                  >
+                    Troubleshot payroll module issues for client-facing Paycom
+                    employees, including check approval errors, manual check
+                    defects, payroll process failures, user access issues, and
+                    system functionality concerns.
+                  </p>
+                  <p
+                    class="exp-bullet text-textmut text-sm leading-relaxed"
+                    data-id="478"
+                  >
+                    Managed technical support tickets in Jira by documenting
+                    issue details, tracking investigation progress, coordinating
+                    escalations, and following payroll defects through
+                    resolution.
+                  </p>
+                  <p
+                    class="exp-bullet text-textmut text-sm leading-relaxed"
+                    data-id="479"
+                  >
+                    Investigated complex front-end and back-end system behavior
+                    by researching errors, reviewing process flow, validating
+                    expected functionality, and using technical analysis to
+                    identify root causes.
+                  </p>
+                  <p
+                    class="exp-bullet text-textmut text-sm leading-relaxed"
+                    data-id="480"
+                  >
+                    Wrote proactive queries to identify user errors, payroll
+                    issues, and potential bugs before clients reported them,
+                    helping reduce downstream support impact and improve issue
+                    visibility.
+                  </p>
+                  <p
+                    class="exp-bullet text-textmut text-sm leading-relaxed"
+                    data-id="481"
+                  >
+                    Partnered closely with payroll development teams and product
+                    managers to confirm system behavior, escalate defects,
+                    provide research-backed findings, and support timely bug
+                    resolution.
+                  </p>
+                  <p
+                    class="exp-bullet text-textmut text-sm leading-relaxed"
+                    data-id="482"
+                  >
+                    Created 100+ FAQs and knowledge base articles that improved
+                    internal troubleshooting consistency, reduced repeated
+                    questions, and gave client-facing teams clearer guidance.
+                  </p>
+                  <p
+                    class="exp-bullet text-textmut text-sm leading-relaxed"
+                    data-id="483"
+                  >
+                    Cut ticket response and resolution times nearly in half by
+                    combining strong troubleshooting, Jira ticket management,
+                    documentation, cross-team collaboration, research, and
+                    development knowledge.
+                  </p>
+                </div>
+                <div
+                  class="flex flex-wrap gap-2 mt-6 pt-5"
+                  data-id="484"
+                  style="border-top: 1px solid var(--glass-border)"
+                >
+                  <span
+                    class="text-xs px-2.5 py-1 rounded-full"
+                    data-id="485"
+                    style="background: rgba(34, 197, 94, 0.1); color: #4ade80"
+                    >Jira</span
+                  >
+                  <span
+                    class="text-xs px-2.5 py-1 rounded-full"
+                    data-id="486"
+                    style="background: rgba(34, 197, 94, 0.1); color: #4ade80"
+                    >SQL</span
+                  >
+                  <span
+                    class="text-xs px-2.5 py-1 rounded-full"
+                    data-id="487"
+                    style="background: rgba(34, 197, 94, 0.1); color: #4ade80"
+                    >Active Directory</span
+                  >
+                  <span
+                    class="text-xs px-2.5 py-1 rounded-full"
+                    data-id="488"
+                    style="background: rgba(34, 197, 94, 0.1); color: #4ade80"
+                    >Technical Analysis</span
+                  >
+                  <span
+                    class="text-xs px-2.5 py-1 rounded-full"
+                    data-id="489"
+                    style="background: rgba(34, 197, 94, 0.1); color: #4ade80"
+                    >Documentation</span
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Costco -->
+            <div class="fade-up" data-id="490" style="transition-delay: 0.15s">
+              <div
+                class="glass p-6 md:p-8"
+                data-id="491"
+                style="border-left: 4px solid #4ade80"
+              >
+                <div
+                  class="flex flex-col md:flex-row md:items-start md:justify-between mb-4"
+                  data-id="492"
+                >
+                  <div data-id="493">
+                    <h3
+                      class="font-bold text-xl text-textpri mb-1"
+                      data-id="494"
+                    >
+                      E-Commerce Agent
+                    </h3>
+                    <p class="text-primary font-semibold" data-id="495">
+                      Costco Wholesale
+                    </p>
+                    <p class="text-textmut text-sm" data-id="496">
+                      Oklahoma City, OK
+                    </p>
+                  </div>
+                  <span class="pill mt-3 md:mt-0 self-start" data-id="497">
+                    <i
+                      class="w-3.5 h-3.5"
+                      data-id="498"
+                      data-lucide="calendar"
+                    ></i>
+                    Jul 2020 – Dec 2020
+                  </span>
+                </div>
+                <div class="space-y-3 mt-4" data-id="499">
+                  <p
+                    class="exp-bullet text-textmut text-sm leading-relaxed"
+                    data-id="500"
+                  >
+                    Delivered customer support across chat, phone, and logistics
+                    channels while resolving issues efficiently, maintaining
+                    compliance, and coordinating backend order fulfillment.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Farmers Insurance -->
+            <div class="fade-up" data-id="501" style="transition-delay: 0.3s">
+              <div
+                class="glass p-6 md:p-8"
+                data-id="502"
+                style="border-left: 4px solid #4ade80"
+              >
+                <div
+                  class="flex flex-col md:flex-row md:items-start md:justify-between mb-4"
+                  data-id="503"
+                >
+                  <div data-id="504">
+                    <h3
+                      class="font-bold text-xl text-textpri mb-1"
+                      data-id="505"
+                    >
+                      Processor
+                    </h3>
+                    <p class="text-primary font-semibold" data-id="506">
+                      Farmers Insurance
+                    </p>
+                    <p class="text-textmut text-sm" data-id="507">Edmond, OK</p>
+                  </div>
+                  <span class="pill mt-3 md:mt-0 self-start" data-id="508">
+                    <i
+                      class="w-3.5 h-3.5"
+                      data-id="509"
+                      data-lucide="calendar"
+                    ></i>
+                    Nov 2018 – Dec 2019
+                  </span>
+                </div>
+                <div class="space-y-3 mt-4" data-id="510">
+                  <p
+                    class="exp-bullet text-textmut text-sm leading-relaxed"
+                    data-id="511"
+                  >
+                    Processed 1,000+ inbound documents daily with 99.8%
+                    accuracy, operating automated mail systems and ensuring
+                    precise routing to internal departments.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ==================== EDUCATION ==================== -->
+      <section data-id="512" id="education-section-e1d2">
+        <div class="max-w-5xl mx-auto px-5" data-id="513">
+          <div class="text-center mb-16 fade-up" data-id="514">
+            <p
+              class="text-primary text-sm font-semibold uppercase tracking-widest mb-3"
+              data-id="515"
+            >
+              Academics
+            </p>
+            <h2
+              class="text-3xl md:text-4xl font-bold gradient-text"
+              data-id="516"
+            >
+              Education
+            </h2>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6" data-id="517">
+            <!-- Fullstack Academy -->
+            <div
+              class="edu-card glass p-6 fade-up"
+              data-id="518"
+              style="border-top: 4px solid #22c55e; transition-delay: 0.1s"
+            >
+              <div class="flex items-center gap-3 mb-3" data-id="519">
+                <span class="text-2xl" data-id="520">🎓</span>
+                <div data-id="521">
+                  <h3 class="font-bold text-lg text-textpri" data-id="522">
+                    Software Engineering
+                  </h3>
+                  <p class="text-primary text-sm font-semibold" data-id="523">
+                    Fullstack Academy
+                  </p>
+                </div>
+              </div>
+              <p class="text-textmut text-sm mb-3" data-id="524">
+                Expected July 2026
+              </p>
+              <p
+                class="text-textmut text-sm leading-relaxed mb-4"
+                data-id="525"
+              >
+                Focused on JavaScript, React, Node.js, Express, PostgreSQL, REST
+                APIs, and full-stack application development.
+              </p>
+              <span
+                class="text-xs px-2.5 py-1 rounded-full font-semibold"
+                data-id="526"
+                style="
+                  background: rgba(34, 197, 94, 0.15);
+                  color: #4ade80;
+                  border: 1px solid rgba(34, 197, 94, 0.3);
+                "
+                >In Progress</span
+              >
+            </div>
+            <!-- Mid-America Christian University -->
+            <div
+              class="edu-card glass p-6 fade-up"
+              data-id="527"
+              style="border-top: 4px solid #4ade80; transition-delay: 0.2s"
+            >
+              <div class="flex items-center gap-3 mb-3" data-id="528">
+                <span class="text-2xl" data-id="529">🎓</span>
+                <div data-id="530">
+                  <h3 class="font-bold text-lg text-textpri" data-id="531">
+                    Bachelor of Business Administration
+                  </h3>
+                  <p class="text-primary text-sm font-semibold" data-id="532">
+                    Mid-America Christian University
+                  </p>
+                </div>
+              </div>
+              <p class="text-textmut text-sm mb-3" data-id="533">
+                Aug 2020 – Oct 2023
+              </p>
+              <div class="flex flex-wrap gap-2" data-id="534">
+                <span
+                  class="text-xs px-2.5 py-1 rounded-full"
+                  data-id="535"
+                  style="background: rgba(34, 197, 94, 0.1); color: #4ade80"
+                  >Business Analysis</span
+                >
+                <span
+                  class="text-xs px-2.5 py-1 rounded-full"
+                  data-id="536"
+                  style="background: rgba(34, 197, 94, 0.1); color: #4ade80"
+                  >Accounting</span
+                >
+                <span
+                  class="text-xs px-2.5 py-1 rounded-full"
+                  data-id="537"
+                  style="background: rgba(34, 197, 94, 0.1); color: #4ade80"
+                  >Financial Analysis</span
+                >
+                <span
+                  class="text-xs px-2.5 py-1 rounded-full"
+                  data-id="538"
+                  style="background: rgba(34, 197, 94, 0.1); color: #4ade80"
+                  >Leadership Development</span
+                >
+              </div>
+            </div>
+            <!-- Northern Oklahoma College -->
+            <div
+              class="edu-card glass p-6 fade-up"
+              data-id="539"
+              style="border-top: 4px solid #4ade80; transition-delay: 0.3s"
+            >
+              <div class="flex items-center gap-3 mb-3" data-id="540">
+                <span class="text-2xl" data-id="541">🎓</span>
+                <div data-id="542">
+                  <h3 class="font-bold text-lg text-textpri" data-id="543">
+                    Associate of Behavioral Science
+                  </h3>
+                  <p class="text-primary text-sm font-semibold" data-id="544">
+                    Northern Oklahoma College
+                  </p>
+                </div>
+              </div>
+              <p class="text-textmut text-sm mb-3" data-id="545">2014 – 2017</p>
+              <div class="flex flex-wrap gap-2" data-id="546">
+                <span
+                  class="text-xs px-2.5 py-1 rounded-full"
+                  data-id="547"
+                  style="background: rgba(34, 197, 94, 0.1); color: #4ade80"
+                  >Psychology</span
+                >
+                <span
+                  class="text-xs px-2.5 py-1 rounded-full"
+                  data-id="548"
+                  style="background: rgba(34, 197, 94, 0.1); color: #4ade80"
+                  >Human Behavior</span
+                >
+                <span
+                  class="text-xs px-2.5 py-1 rounded-full"
+                  data-id="549"
+                  style="background: rgba(34, 197, 94, 0.1); color: #4ade80"
+                  >Problem Solving</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ==================== CONTACT ==================== -->
+      <section data-id="550" id="contact-section-z3a4">
+        <div class="max-w-3xl mx-auto px-5 text-center" data-id="551">
+          <div class="fade-up" data-id="552">
+            <p
+              class="text-primary text-sm font-semibold uppercase tracking-widest mb-3"
+              data-id="553"
+            >
+              Get In Touch
+            </p>
+            <h2
+              class="text-3xl md:text-4xl font-bold gradient-text mb-4"
+              data-id="554"
+              id="contact-title-d9e0"
+            >
+              Let's Connect
+            </h2>
+            <p class="text-textmut text-base mb-10" data-id="555">
+              Open to opportunities, collaborations, and interesting problems.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 mb-8" data-id="556">
+              <a
+                aria-label="Email Me"
+                class="contact-btn"
+                data-id="557"
+                href="mailto:charleskwadejr1088@gmail.com"
+              >
+                <svg
+                  data-id="558"
+                  fill="none"
+                  height="20"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewbox="0 0 24 24"
+                  width="20"
+                >
+                  <rect
+                    data-id="559"
+                    height="16"
+                    rx="2"
+                    ry="2"
+                    width="20"
+                    x="2"
+                    y="4"
+                  ></rect>
+                  <polyline data-id="560" points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span data-id="561">Email Me</span>
+              </a>
+              <a
+                aria-label="GitHub"
+                class="contact-btn"
+                data-id="562"
+                href="https://github.com/CharlesW1117"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <svg
+                  data-id="563"
+                  fill="currentColor"
+                  height="20"
+                  viewbox="0 0 24 24"
+                  width="20"
+                >
+                  <path
+                    d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.341-3.369-1.341-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"
+                    data-id="564"
+                  ></path>
+                </svg>
+                <span data-id="565">GitHub</span>
+              </a>
+              <a
+                aria-label="LinkedIn"
+                class="contact-btn"
+                data-id="566"
+                href="https://linkedin.com/in/charles-wadejr-47b8a4197/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <svg
+                  data-id="567"
+                  fill="none"
+                  height="20"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-width="2"
+                  viewbox="0 0 24 24"
+                  width="20"
+                >
+                  <rect
+                    data-id="568"
+                    fill="none"
+                    height="20"
+                    rx="4"
+                    ry="4"
+                    width="20"
+                    x="2"
+                    y="2"
+                  ></rect>
+                  <line data-id="569" x1="8" x2="8" y1="10" y2="17"></line>
+                  <circle
+                    cx="8"
+                    cy="7"
+                    data-id="570"
+                    fill="currentColor"
+                    r="1"
+                  ></circle>
+                  <path d="M12 10v7M12 13a3 3 0 016 0v4" data-id="571"></path>
+                </svg>
+                <span data-id="572">LinkedIn</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ==================== FOOTER ==================== -->
+    <footer
+      class="py-10 border-t"
+      data-id="573"
+      id="footer-section-f1g2"
+      style="border-color: rgba(34, 197, 94, 0.08)"
+    >
+      <div class="max-w-3xl mx-auto px-5 text-center" data-id="574">
+        <p class="text-textmut text-sm" data-id="575">
+          Built with React · Node.js · PostgreSQL · Fullstack Academy · Charles
+          Wade · 2026
+        </p>
+      </div>
+    </footer>
 
-<script src="script.js"></script></body>
+    <script src="script.js"></script>
+  </body>
 </html>
