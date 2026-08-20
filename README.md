@@ -59,7 +59,7 @@ Solved race-condition bugs by restructuring the game loop using controlled inter
 A collaborative full-stack fitness application with JWT authentication, REST API integration, and PostgreSQL data persistence.  
 Implemented activity creation, deletion, and token-based protected routes with reusable React components.  
 **Stack:** React · Node.js · Express · PostgreSQL · REST APIs · Context API · JWT  
-🔗 [GitHub](https://github.com/CharlesW1117/Fitness-Trackr-Pro-PT-1-) · [Live Demo](https://charlesw1117.github.io/Fitness-Trackr-Pro-PT-1-/)
+🔗 [GitHub](https://github.com/CharlesW1117/Fitness-Trackr-Pro-PT-1-) · [Live Demo](https://fittrack1pro.netlify.app)
 
 ---
 
