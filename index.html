@@ -1172,29 +1172,42 @@
                   >
                 </div>
               </div>
-              <div class="px-6 pb-6 flex gap-3" data-id="266">
-                <a
-                  class="btn-outline text-sm py-2 px-4 flex-1 justify-center"
-                  data-id="267"
-                  href="https://github.com/CharlesW1117/Fitness-Trackr-Pro-PT-1-"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  ><i class="w-4 h-4" data-id="268" data-lucide="github"></i>
-                  GitHub</a
+              <div class="px-6 pb-6 flex flex-col gap-3" data-id="266">
+                <button
+                  type="button"
+                  class="btn-primary text-sm py-2 px-4 w-full justify-center"
+                  data-id="271"
+                  id="fitness-demo-btn"
+                  aria-haspopup="dialog"
+                  aria-controls="fitness-demo-modal"
                 >
-                <a
-                  class="btn-primary text-sm py-2 px-4 flex-1 justify-center"
-                  data-id="269"
-                  href="https://fittrack1pro.netlify.app"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  ><i
-                    class="w-4 h-4"
-                    data-id="270"
-                    data-lucide="external-link"
-                  ></i>
-                  Live Demo</a
-                >
+                  <i class="w-4 h-4" data-lucide="play-circle"></i>
+                  Watch Demo — No Sign-Up Needed
+                </button>
+                <div class="flex gap-3">
+                  <a
+                    class="btn-outline text-sm py-2 px-4 flex-1 justify-center"
+                    data-id="267"
+                    href="https://github.com/CharlesW1117/Fitness-Trackr-Pro-PT-1-"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    ><i class="w-4 h-4" data-id="268" data-lucide="github"></i>
+                    GitHub</a
+                  >
+                  <a
+                    class="btn-outline text-sm py-2 px-4 flex-1 justify-center"
+                    data-id="269"
+                    href="https://fittrack1pro.netlify.app"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    ><i
+                      class="w-4 h-4"
+                      data-id="270"
+                      data-lucide="external-link"
+                    ></i>
+                    Live Demo</a
+                  >
+                </div>
               </div>
             </div>
           </div>
@@ -2195,6 +2208,76 @@
       </div>
     </footer>
 
+    <!-- ==================== FITNESS DEMO MODAL ==================== -->
+    <div
+      class="hidden fixed inset-0 z-[70] flex items-center justify-center p-4"
+      id="fitness-demo-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="fitness-demo-title"
+      style="background: rgba(5, 15, 10, 0.85); backdrop-filter: blur(8px)"
+    >
+      <div
+        class="glass w-full max-w-4xl overflow-hidden"
+        id="fitness-demo-dialog"
+      >
+        <div
+          class="flex items-center justify-between gap-4 px-5 py-4"
+          style="border-bottom: 1px solid rgba(34, 197, 94, 0.15)"
+        >
+          <div class="flex items-center gap-2 min-w-0">
+            <i
+              class="w-5 h-5 shrink-0"
+              data-lucide="activity"
+              style="color: #4ade80"
+            ></i>
+            <h3
+              class="font-bold text-base sm:text-lg text-textpri truncate"
+              id="fitness-demo-title"
+            >
+              Fitness Tracker Pro — Feature Demo
+            </h3>
+          </div>
+          <button
+            type="button"
+            class="p-2 rounded-lg text-textpri transition-colors shrink-0"
+            id="fitness-demo-close"
+            aria-label="Close demo"
+            style="
+              background: rgba(34, 197, 94, 0.12);
+              border: 1px solid rgba(34, 197, 94, 0.3);
+            "
+          >
+            <i class="w-6 h-6" data-lucide="x"></i>
+          </button>
+        </div>
+        <div class="p-4 sm:p-5">
+          <video
+            id="fitness-demo-video"
+            class="w-full rounded-lg bg-black"
+            controls
+            playsinline
+            preload="none"
+            poster="assets/fittrackr-demo-poster.jpg"
+          >
+            <source src="assets/fittrackr-demo.mp4" type="video/mp4" />
+            Your browser does not support embedded video. You can
+            <a
+              href="https://fittrack1pro.netlify.app"
+              rel="noopener noreferrer"
+              target="_blank"
+              >view the live app instead</a
+            >.
+          </video>
+          <p class="text-textmut text-xs sm:text-sm mt-3 leading-relaxed">
+            A walkthrough of the app's features — setting fitness goals,
+            tracking daily water intake, and logging body measurements and
+            weight with live progress charts — so you can explore everything
+            without creating an account.
+          </p>
+        </div>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

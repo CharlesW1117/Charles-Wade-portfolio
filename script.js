@@ -211,6 +211,40 @@ if (typeof lucide !== "undefined" && typeof lucide.createIcons === "function") {
   }, 100);
 })();
 
+// Fitness Demo Modal
+(function () {
+  var openBtn = document.getElementById("fitness-demo-btn");
+  var modal = document.getElementById("fitness-demo-modal");
+  var closeBtn = document.getElementById("fitness-demo-close");
+  var dialog = document.getElementById("fitness-demo-dialog");
+  var video = document.getElementById("fitness-demo-video");
+  if (!openBtn || !modal || !closeBtn) return;
+
+  function openModal() {
+    modal.classList.remove("hidden");
+    document.body.style.overflow = "hidden";
+    if (video && typeof video.play === "function") {
+      var p = video.play();
+      if (p && typeof p.catch === "function") p.catch(function () {});
+    }
+  }
+
+  function closeModal() {
+    modal.classList.add("hidden");
+    document.body.style.overflow = "";
+    if (video && typeof video.pause === "function") video.pause();
+  }
+
+  openBtn.addEventListener("click", openModal);
+  closeBtn.addEventListener("click", closeModal);
+  modal.addEventListener("click", function (e) {
+    if (dialog && !dialog.contains(e.target)) closeModal();
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && !modal.classList.contains("hidden")) closeModal();
+  });
+})();
+
 // Code Tabs
 (function () {
   var tabs = document.querySelectorAll("[data-code-tab]");
