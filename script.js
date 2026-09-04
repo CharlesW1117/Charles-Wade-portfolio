@@ -211,37 +211,58 @@ if (typeof lucide !== "undefined" && typeof lucide.createIcons === "function") {
   }, 100);
 })();
 
-// Fitness Demo Modal
+// Demo Modals
 (function () {
-  var openBtn = document.getElementById("fitness-demo-btn");
-  var modal = document.getElementById("fitness-demo-modal");
-  var closeBtn = document.getElementById("fitness-demo-close");
-  var dialog = document.getElementById("fitness-demo-dialog");
-  var video = document.getElementById("fitness-demo-video");
-  if (!openBtn || !modal || !closeBtn) return;
+  var modalConfigs = [
+    {
+      openBtn: document.getElementById("fitness-demo-btn"),
+      modal: document.getElementById("fitness-demo-modal"),
+      closeBtn: document.getElementById("fitness-demo-close"),
+      dialog: document.getElementById("fitness-demo-dialog"),
+      video: document.getElementById("fitness-demo-video"),
+    },
+    {
+      openBtn: document.getElementById("pawpal-demo-btn"),
+      modal: document.getElementById("pawpal-demo-modal"),
+      closeBtn: document.getElementById("pawpal-demo-close"),
+      dialog: document.getElementById("pawpal-demo-dialog"),
+      video: document.getElementById("pawpal-demo-video"),
+    },
+  ];
 
-  function openModal() {
-    modal.classList.remove("hidden");
-    document.body.style.overflow = "hidden";
-    if (video && typeof video.play === "function") {
-      var p = video.play();
-      if (p && typeof p.catch === "function") p.catch(function () {});
+  modalConfigs.forEach(function (config) {
+    if (!config.openBtn || !config.modal || !config.closeBtn) return;
+
+    function openModal() {
+      config.modal.classList.remove("hidden");
+      document.body.style.overflow = "hidden";
+      if (config.video && typeof config.video.play === "function") {
+        var p = config.video.play();
+        if (p && typeof p.catch === "function") p.catch(function () {});
+      }
     }
-  }
 
-  function closeModal() {
-    modal.classList.add("hidden");
-    document.body.style.overflow = "";
-    if (video && typeof video.pause === "function") video.pause();
-  }
+    function closeModal() {
+      config.modal.classList.add("hidden");
+      document.body.style.overflow = "";
+      if (config.video && typeof config.video.pause === "function") config.video.pause();
+    }
 
-  openBtn.addEventListener("click", openModal);
-  closeBtn.addEventListener("click", closeModal);
-  modal.addEventListener("click", function (e) {
-    if (dialog && !dialog.contains(e.target)) closeModal();
+    config.openBtn.addEventListener("click", openModal);
+    config.closeBtn.addEventListener("click", closeModal);
+    config.modal.addEventListener("click", function (e) {
+      if (config.dialog && !config.dialog.contains(e.target)) closeModal();
+    });
   });
+
   document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape" && !modal.classList.contains("hidden")) closeModal();
+    var activeModal = document.querySelector(".fixed:not(.hidden)[role='dialog']");
+    if (e.key === "Escape" && activeModal) {
+      activeModal.classList.add("hidden");
+      document.body.style.overflow = "";
+      var activeVideo = activeModal.querySelector("video");
+      if (activeVideo && typeof activeVideo.pause === "function") activeVideo.pause();
+    }
   });
 })();
 

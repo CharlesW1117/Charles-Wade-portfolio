@@ -1282,19 +1282,17 @@
                </div>
              </div>
              <div class="px-6 pb-6 flex gap-3" data-id="270n">
-               <a
+               <button
+                 type="button"
                  class="btn-primary text-sm py-2 px-4 flex-1 justify-center"
                  data-id="270o"
-                 href="demo-assets/pawpal-demo.gif"
-                 rel="noopener noreferrer"
-                 target="_blank"
-                 ><i
-                   class="w-4 h-4"
-                   data-id="270p"
-                   data-lucide="play-circle"
-                 ></i>
-                 Watch Demo</a
+                 id="pawpal-demo-btn"
+                 aria-haspopup="dialog"
+                 aria-controls="pawpal-demo-modal"
                >
+                 <i class="w-4 h-4" data-id="270p" data-lucide="play-circle"></i>
+                 Watch Demo
+               </button>
                <a
                  class="btn-outline text-sm py-2 px-4 flex-1 justify-center"
                  data-id="270q"
@@ -2459,6 +2457,84 @@
             weight with live progress charts — so you can explore everything
             without creating an account.
           </p>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="hidden fixed inset-0 z-[70] flex items-center justify-center p-4"
+      id="pawpal-demo-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="pawpal-demo-title"
+      style="background: rgba(5, 15, 10, 0.85); backdrop-filter: blur(8px)"
+    >
+      <div class="glass w-full max-w-4xl overflow-hidden" id="pawpal-demo-dialog">
+        <div
+          class="flex items-center justify-between gap-4 px-5 py-4"
+          style="border-bottom: 1px solid rgba(34, 197, 94, 0.15)"
+        >
+          <div class="flex items-center gap-2 min-w-0">
+            <i
+              class="w-5 h-5 shrink-0"
+              data-lucide="paw-print"
+              style="color: #4ade80"
+            ></i>
+            <h3
+              class="font-bold text-base sm:text-lg text-textpri truncate"
+              id="pawpal-demo-title"
+            >
+              PawPal — Marketplace Walkthrough
+            </h3>
+          </div>
+          <button
+            type="button"
+            class="p-2 rounded-lg text-textpri transition-colors shrink-0"
+            id="pawpal-demo-close"
+            aria-label="Close demo"
+            style="
+              background: rgba(34, 197, 94, 0.12);
+              border: 1px solid rgba(34, 197, 94, 0.3);
+            "
+          >
+            <i class="w-6 h-6" data-lucide="x"></i>
+          </button>
+        </div>
+        <div class="p-4 sm:p-5">
+          <video
+            id="pawpal-demo-video"
+            class="w-full rounded-lg bg-black"
+            controls
+            playsinline
+            preload="metadata"
+          >
+            <source
+              src="demo-assets/pawpal_demo_full_marketplace_flow_compatible.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support embedded video. You can
+            <a
+              href="demo-assets/pawpal_demo_full_marketplace_flow_compatible.mp4"
+              rel="noopener noreferrer"
+              target="_blank"
+              >open the video in a new tab</a
+            >.
+          </video>
+          <div class="text-textmut text-xs sm:text-sm mt-3 leading-relaxed space-y-2">
+            <p>
+              This walkthrough highlights the core PawPal experience from the
+              owner's perspective: browsing available sitters, reviewing service
+              details, and exploring the marketplace flow that makes the product
+              easy to navigate without creating an account.
+            </p>
+            <p>
+              The demo focuses on the public-facing experience, including the
+              search and discovery journey, the pet-care service presentation, and
+              the general user flow that demonstrates how PawPal presents its
+              booking and sitter-selection experience in a polished, user-friendly
+              way.
+            </p>
+          </div>
         </div>
       </div>
     </div>
